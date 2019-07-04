@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        maven { url "http://download.osgeo.org/webdav/geotools/" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "http://jars.interlis.ch" }
+        jcenter()
+        mavenCentral()
+    }
+        dependencies {
+            classpath "ch.so.agi:gretl:2.0.103"
+            classpath "de.undercouch:gradle-download-task:3.4.3"
+    }
+}
+
+allprojects {
+    apply plugin: "ch.so.agi.gretl"
+
+    ext {
+        dbUriOereb = System.getenv('dbUriOereb') ?: "jdbc:postgresql://localhost:54321/oereb" 
+        dbUserOereb = System.getenv('dbUserOereb') ?: "gretl"
+        dbPwdOereb = System.getenv('dbPwdOereb') ?: "gretl"
+    }
+}
+

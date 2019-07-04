@@ -1,0 +1,2 @@
+rootProject.name = 'oereb-kataster'
+include 'avimport'
