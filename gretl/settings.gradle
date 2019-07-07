@@ -1,2 +1,6 @@
 rootProject.name = 'oereb-kataster'
-include 'avimport'
+include 'av_import'
+include 'plz_import'
+include 'bundesgesetze_import'
+include 'kantonale_gesetze_import'
+include 'bundesdaten_import'

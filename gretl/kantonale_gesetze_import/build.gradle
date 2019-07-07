@@ -1,0 +1,37 @@
+import ch.so.agi.gretl.tasks.*
+import java.nio.file.Paths
+import de.undercouch.gradle.tasks.download.Download
+
+def pathToTempFolder = System.getProperty("java.io.tmpdir")
+def pathToUnzipFolder = Paths.get(pathToTempFolder, "unzip_data")
+def pathToDataZip = Paths.get(pathToTempFolder, "data.zip")
+def fileName = "ch.so.sk.gesetze.xtf"
+
+def GROUP = "Kantonale-Gesetze-Import"
+ 
+task download(type: Download) {
+    group = GROUP
+    description = "Download kantonale Gesetze."
+    src "https://s3.eu-central-1.amazonaws.com/ch.so.sk.gesetze/" + fileName
+    dest pathToTempFolder
+    overwrite true
+
+    doLast {
+        println "File downloaded to: " + pathToTempFolder
+    }    
+}
+    
+task dbImport(type: Ili2pgReplace, dependsOn: download) {
+    group = GROUP
+    description = "Import kantonale Gesetze in die Datenbank."
+    database = [dbUriOereb, dbUserOereb, dbPwdOereb]
+    dbschema = dbSchema
+    models = iliModelVorschriften
+    dataFile = file(Paths.get(pathToTempFolder.toString(), fileName))
+    dataset = "ch.so.sk.gesetze"
+    disableValidation = true
+
+    doLast {
+        println "Data imported into db: " + dbUriOereb
+    }    
+}

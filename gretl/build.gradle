@@ -23,6 +23,9 @@ allprojects {
         dbSchema = System.getenv('dbSchema') ?: "live"
 
         iliModelAmtlicheVermessung = "DM01AVCH24LV95D"
+        iliModelPLZOrtschaft = "PLZOCH1LV95D"
+        iliModelVorschriften = "OeREBKRMvs_V1_1"
+        iliModelTransferstruktur = "OeREBKRMtrsfr_V1_1"
     }
 }
 
