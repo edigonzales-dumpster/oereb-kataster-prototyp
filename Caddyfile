@@ -1,0 +1,4 @@
+http://localhost 
+tls stefan.ziegler.de@gmail.com
+
+proxy / web-service:8080/ 

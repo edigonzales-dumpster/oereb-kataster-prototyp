@@ -20,7 +20,7 @@ services:
     ports:
       - "54321:5432"
     volumes:
-      - /opt/oereb-pgdata:/pgdata:delegated
+      - ~/oereb-pgdata:/pgdata:delegated
     restart: on-failure
   web-service:
     depends_on:
@@ -32,6 +32,17 @@ services:
       DBUSR: admin
       DBPWD: admin
       DBSCHEMA: live
+      #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
     ports:
       - "8080:8080"
     restart: on-failure
+  server:
+    image: abiosoft/caddy
+    container_name: caddy
+    restart: on-failure
+    ports:
+      - "80:80"
+      #- "443:443"
+    volumes:
+      - "~/.caddy:/root/.caddy"
+      - "./Caddyfile:/etc/Caddyfile"
