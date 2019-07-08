@@ -3,8 +3,6 @@ import java.nio.file.Paths
 import de.undercouch.gradle.tasks.download.Download
 
 def pathToTempFolder = System.getProperty("java.io.tmpdir")
-def pathToUnzipFolder = Paths.get(pathToTempFolder, "unzip_data")
-def pathToDataZip = Paths.get(pathToTempFolder, "data.zip")
 def fileName = "ch.so.sk.gesetze.xtf"
 
 def GROUP = "Kantonale-Gesetze-Import"

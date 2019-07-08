@@ -5,6 +5,8 @@ Starten der Anwendung mit `docker-compose`:
 
 ```
 docker-compose up
+
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
 ```
 
 Es wird eine Datenbank angelegt und der oereb-web-service wird gestartet. 
@@ -18,7 +20,7 @@ http://localhost:8080/capabilities/xml
 ## Datenimport
 
 ```
-./gradlew av_import:replaceCadastralSurveyingData plz_import:dbImport bundesgesetze_import:dbImport bundesdaten_import:replaceFederalData kantonale_gesetze_import:dbImport
+./gradlew av_import:replaceCadastralSurveyingData plz_import:dbImport bundesgesetze_import:dbImport bundesdaten_import:replaceFederalData kantonale_gesetze_import:dbImport npl_import:replaceLandUsePlanningData
 ```
 
 Der "Fullimport" der amtlichen Vermessung dauert circa 2 bis 3 Stunden. Aus diesem Grund werden nur einige Gemeinden importiert (wo ÖREB-Daten vorhanden sind).

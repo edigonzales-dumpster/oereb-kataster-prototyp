@@ -1,0 +1,49 @@
+import ch.so.agi.gretl.tasks.*
+import java.nio.file.Paths
+import de.undercouch.gradle.tasks.download.Download
+
+def pathToTempFolder = System.getProperty("java.io.tmpdir")
+def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.grundnutzung.oereb"]
+def landUsePlanningBaseUrl = "https://s3.eu-central-1.amazonaws.com/ch.so.arp.nutzungsplanung.oereb-dev/"
+
+def GROUP = "Nutzungsplanung-Import"
+ 
+landUsePlanningDataSets.each { landUsePlanningDataSet ->
+    def dataSet = landUsePlanningDataSet.toString()
+    task "downloadLandUsePlanningData_$dataSet"(type: Download) {
+        group = GROUP
+        description = "Download NPL-Datensatz: ${dataSet}"
+        src landUsePlanningBaseUrl + dataSet + ".xtf"
+        dest pathToTempFolder
+        overwrite true
+
+        doLast {
+            println "File downloaded to: " + pathToTempFolder
+        }        
+    }
+
+    task "replaceLandUsePlanningData_$dataSet"(type: Ili2pgReplace, dependsOn: "downloadLandUsePlanningData_$dataSet") {
+        group = GROUP
+        description = "Import NPL-Datensatz: ${dataSet}"
+        database = [dbUriOereb, dbUserOereb, dbPwdOereb]
+        models = iliModelTransferstruktur
+        dbschema = dbSchema
+        dataFile = file(Paths.get(pathToTempFolder.toString(), dataSet + ".xtf"))
+        dataset = dataSet
+        disableValidation = true
+
+        doLast {
+            println "Data imported into db: " + dbUriOereb
+        }          
+    }
+}
+
+
+task replaceLandUsePlanningData() {
+    group = GROUP
+    description = "Aggregationstask für das Importieren/Ersetzen sämtlicher AV-Daten."
+}
+
+replaceLandUsePlanningData.dependsOn {
+    tasks.findAll { task -> task.name.startsWith('replaceLandUsePlanningData_') }
+}
