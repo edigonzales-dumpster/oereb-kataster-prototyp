@@ -1,0 +1,15 @@
+version: '3'
+services:
+  wms:
+    depends_on:
+      - db
+    image: sogis/geoserver
+    build:
+      context: ./geoserver
+      dockerfile: Dockerfile
+    command: start.sh
+    ports:
+      - "8080:8080"
+    volumes:
+      - "${PWD}/geoserver/data_dir:/var/local/geoserver"
+    restart: always
