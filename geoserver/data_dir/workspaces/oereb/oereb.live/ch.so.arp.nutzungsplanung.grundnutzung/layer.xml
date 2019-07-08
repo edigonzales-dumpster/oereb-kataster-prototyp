@@ -1,0 +1,15 @@
+<layer>
+  <name>ch.so.arp.nutzungsplanung.grundnutzung</name>
+  <id>LayerInfoImpl-7c4f3b4f:16bd238fc3d:-7ffa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-7c4f3b4f:16bd238fc3d:-7a92</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-7c4f3b4f:16bd238fc3d:-7ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

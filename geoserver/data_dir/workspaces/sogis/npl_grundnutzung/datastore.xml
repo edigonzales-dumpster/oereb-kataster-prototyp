@@ -1,0 +1,18 @@
+<dataStore>
+  <id>DataStoreInfoImpl-4ca2a14d:16ba362ba0b:-7fff</id>
+  <name>npl_grundnutzung</name>
+  <type>GeoPackage</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-7b5fae9d:16b2886ee43:-7ff2</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="Batch insert size">1</entry>
+    <entry key="database">file:data/npl_grundnutzung.gpkg</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="dbtype">geopkg</entry>
+    <entry key="namespace">http://agi.so.ch/sogis</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

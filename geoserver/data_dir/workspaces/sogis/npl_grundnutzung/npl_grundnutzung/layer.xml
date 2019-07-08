@@ -1,0 +1,15 @@
+<layer>
+  <name>npl_grundnutzung</name>
+  <id>LayerInfoImpl-4ca2a14d:16ba362ba0b:-7ffb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-d5c3ef4:16b5b4c1642:-7fff</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4ca2a14d:16ba362ba0b:-7ffc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

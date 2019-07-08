@@ -1,0 +1,1522 @@
+2019-06-05 18:44:23,618 INFO [org.geoserver] - GeoServer configuration lock is enabled
+2019-06-05 18:44:23,754 INFO [org.geoserver] - Loaded style 'pophatch'
+2019-06-05 18:44:23,755 INFO [org.geoserver] - Loaded style 'simple_roads'
+2019-06-05 18:44:23,755 INFO [org.geoserver] - Loaded style 'burg'
+2019-06-05 18:44:23,756 INFO [org.geoserver] - Loaded style 'poi'
+2019-06-05 18:44:23,757 INFO [org.geoserver] - Loaded style 'polygon'
+2019-06-05 18:44:23,757 INFO [org.geoserver] - Loaded style 'population'
+2019-06-05 18:44:23,758 INFO [org.geoserver] - Loaded style 'giant_polygon'
+2019-06-05 18:44:23,759 INFO [org.geoserver] - Loaded style 'simple_streams'
+2019-06-05 18:44:23,759 INFO [org.geoserver] - Loaded style 'raster'
+2019-06-05 18:44:23,760 INFO [org.geoserver] - Loaded style 'tiger_roads'
+2019-06-05 18:44:23,760 INFO [org.geoserver] - Loaded style 'point'
+2019-06-05 18:44:23,761 INFO [org.geoserver] - Loaded style 'restricted'
+2019-06-05 18:44:23,762 INFO [org.geoserver] - Loaded style 'dem'
+2019-06-05 18:44:23,762 INFO [org.geoserver] - Loaded style 'grass'
+2019-06-05 18:44:23,763 INFO [org.geoserver] - Loaded style 'poly_landmarks'
+2019-06-05 18:44:23,764 INFO [org.geoserver] - Loaded style 'green'
+2019-06-05 18:44:23,765 INFO [org.geoserver] - Loaded style 'generic'
+2019-06-05 18:44:23,765 INFO [org.geoserver] - Loaded style 'capitals'
+2019-06-05 18:44:23,766 INFO [org.geoserver] - Loaded style 'line'
+2019-06-05 18:44:23,766 INFO [org.geoserver] - Loaded style 'cite_lakes'
+2019-06-05 18:44:23,766 INFO [org.geoserver] - Loaded style 'rain'
+2019-06-05 18:44:23,767 INFO [org.geoserver] - Loaded default workspace cite
+2019-06-05 18:44:23,782 INFO [org.geoserver] - Loaded workspace 'cite'
+2019-06-05 18:44:23,785 INFO [org.geoserver] - Loaded workspace 'it.geosolutions'
+2019-06-05 18:44:23,787 INFO [org.geoserver] - Loaded workspace 'nurc'
+2019-06-05 18:44:23,788 INFO [org.geoserver] - Loaded workspace 'tiger'
+2019-06-05 18:44:23,790 INFO [org.geoserver] - Loaded workspace 'topp'
+2019-06-05 18:44:23,792 INFO [org.geoserver] - Loaded workspace 'sde'
+2019-06-05 18:44:23,794 INFO [org.geoserver] - Loaded workspace 'sf'
+2019-06-05 18:44:24,074 INFO [org.geoserver] - Loaded coverage store 'img_sample2', enabled
+2019-06-05 18:44:25,644 INFO [org.geoserver] - Loaded coverage 'Pk50095', enabled
+2019-06-05 18:44:25,666 INFO [org.geoserver] - Loaded layer 'Pk50095'
+2019-06-05 18:44:25,667 INFO [org.geoserver] - Loaded coverage store 'arcGridSample', enabled
+2019-06-05 18:44:25,674 INFO [org.geoserver] - Loaded coverage 'Arc_Sample', enabled
+2019-06-05 18:44:25,680 INFO [org.geoserver] - Loaded layer 'Arc_Sample'
+2019-06-05 18:44:25,682 INFO [org.geoserver] - Loaded coverage store 'mosaic', enabled
+2019-06-05 18:44:25,693 INFO [org.geoserver] - Loaded coverage 'mosaic', enabled
+2019-06-05 18:44:25,701 INFO [org.geoserver] - Loaded layer 'mosaic'
+2019-06-05 18:44:25,704 INFO [org.geoserver] - Loaded coverage store 'worldImageSample', enabled
+2019-06-05 18:44:25,710 INFO [org.geoserver] - Loaded coverage 'Img_Sample', enabled
+2019-06-05 18:44:25,713 INFO [org.geoserver] - Loaded layer 'Img_Sample'
+2019-06-05 18:44:25,877 INFO [org.geoserver] - Loaded data store 'nyc', enabled
+2019-06-05 18:44:25,918 INFO [org.geoserver] - Loaded feature type 'poly_landmarks', enabled
+2019-06-05 18:44:25,919 INFO [org.geoserver] - Loaded layer 'poly_landmarks'
+2019-06-05 18:44:25,922 INFO [org.geoserver] - Loaded feature type 'poi', enabled
+2019-06-05 18:44:25,924 INFO [org.geoserver] - Loaded layer 'poi'
+2019-06-05 18:44:25,926 INFO [org.geoserver] - Loaded feature type 'giant_polygon', enabled
+2019-06-05 18:44:25,928 INFO [org.geoserver] - Loaded layer 'giant_polygon'
+2019-06-05 18:44:25,931 INFO [org.geoserver] - Loaded feature type 'tiger_roads', enabled
+2019-06-05 18:44:25,934 INFO [org.geoserver] - Loaded layer 'tiger_roads'
+2019-06-05 18:44:25,941 INFO [org.geoserver] - Loaded data store 'sf', enabled
+2019-06-05 18:44:25,971 INFO [org.geoserver] - Loaded feature type 'bugsites', enabled
+2019-06-05 18:44:25,972 INFO [org.geoserver] - Loaded layer 'bugsites'
+2019-06-05 18:44:25,976 INFO [org.geoserver] - Loaded feature type 'streams', enabled
+2019-06-05 18:44:25,978 INFO [org.geoserver] - Loaded layer 'streams'
+2019-06-05 18:44:25,982 INFO [org.geoserver] - Loaded feature type 'restricted', enabled
+2019-06-05 18:44:25,984 INFO [org.geoserver] - Loaded layer 'restricted'
+2019-06-05 18:44:25,988 INFO [org.geoserver] - Loaded feature type 'archsites', enabled
+2019-06-05 18:44:25,990 INFO [org.geoserver] - Loaded layer 'archsites'
+2019-06-05 18:44:25,996 INFO [org.geoserver] - Loaded feature type 'roads', enabled
+2019-06-05 18:44:25,996 INFO [org.geoserver] - Loaded layer 'roads'
+2019-06-05 18:44:25,998 INFO [org.geoserver] - Loaded coverage store 'sfdem', enabled
+2019-06-05 18:44:26,003 INFO [org.geoserver] - Loaded coverage 'sfdem', enabled
+2019-06-05 18:44:26,005 INFO [org.geoserver] - Loaded layer 'sfdem'
+2019-06-05 18:44:26,013 INFO [org.geoserver] - Loaded data store 'states_shapefile', enabled
+2019-06-05 18:44:26,018 INFO [org.geoserver] - Loaded feature type 'states', enabled
+2019-06-05 18:44:26,020 INFO [org.geoserver] - Loaded layer 'states'
+2019-06-05 18:44:26,025 INFO [org.geoserver] - Loaded data store 'taz_shapes', enabled
+2019-06-05 18:44:26,033 INFO [org.geoserver] - Loaded feature type 'tasmania_water_bodies', enabled
+2019-06-05 18:44:26,036 INFO [org.geoserver] - Loaded layer 'tasmania_water_bodies'
+2019-06-05 18:44:26,039 INFO [org.geoserver] - Loaded feature type 'tasmania_cities', enabled
+2019-06-05 18:44:26,040 INFO [org.geoserver] - Loaded layer 'tasmania_cities'
+2019-06-05 18:44:26,043 INFO [org.geoserver] - Loaded feature type 'tasmania_state_boundaries', enabled
+2019-06-05 18:44:26,044 INFO [org.geoserver] - Loaded layer 'tasmania_state_boundaries'
+2019-06-05 18:44:26,047 INFO [org.geoserver] - Loaded feature type 'tasmania_roads', enabled
+2019-06-05 18:44:26,048 INFO [org.geoserver] - Loaded layer 'tasmania_roads'
+2019-06-05 18:44:26,062 INFO [org.geoserver] - Loaded layer group 'spearfish'
+2019-06-05 18:44:26,063 INFO [org.geoserver] - Loaded layer group 'tiger-ny'
+2019-06-05 18:44:26,064 INFO [org.geoserver] - Loaded layer group 'tasmania'
+2019-06-05 18:44:26,173 INFO [org.geoserver] - Loaded service 'WMTSInfoImpl-7b5fae9d:16b2886ee43:-7ff7', enabled
+2019-06-05 18:44:26,181 INFO [org.geoserver] - Loaded service 'wcs', enabled
+2019-06-05 18:44:26,198 INFO [org.geoserver] - Loaded service 'wfs', enabled
+2019-06-05 18:44:26,215 INFO [org.geoserver] - Loaded service 'wms', enabled
+2019-06-05 18:44:26,251 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache.xml' in directory '/Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc'.
+2019-06-05 18:44:26,329 WARN [config.GeoserverXMLResourceProvider] - Found no configuration file in config directory, will create one at 'gwc/geowebcache.xml' from template jar:file:/Users/stefan/Downloads/geoserver-2.15.1/webapps/geoserver/WEB-INF/lib/gwc-core-1.15.1.jar!/geowebcache_empty.xml
+2019-06-05 18:44:26,333 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-05 18:44:26,333 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-05 18:44:26,391 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-06-05 18:44:26,391 WARN [config.XMLConfiguration] - *** GWC configuration validation error: cvc-elt.1: Cannot find the declaration of element 'gwcConfiguration'.
+2019-06-05 18:44:26,391 WARN [config.XMLConfiguration] - *** Will try to use configuration anyway. Please check the order of declared elements against the schema.
+2019-06-05 18:44:26,391 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-06-05 18:44:26,447 INFO [config.XMLConfiguration] - Initializing GridSets from gwc
+2019-06-05 18:44:26,449 INFO [config.XMLConfiguration] - Initializing layers from gwc
+2019-06-05 18:44:26,495 INFO [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+2019-06-05 18:44:26,496 INFO [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+2019-06-05 18:44:26,496 INFO [gwc.layer] - Loading tile layers from gwc-layers
+2019-06-05 18:44:26,510 INFO [storage.BlobStoreAggregator] - BlobStoreConfiguration gwc contained no blob store infos.
+2019-06-05 18:44:26,518 INFO [storage.DefaultStorageFinder] - ****************************************************************************************************************************************************
+2019-06-05 18:44:26,518 INFO [storage.DefaultStorageFinder] - *** Found Java environment variable GEOSERVER_DATA_DIR set to /Users/stefan/Downloads/geoserver-2.15.1/data_dir, using it as the default prefix. ***
+2019-06-05 18:44:26,518 INFO [storage.DefaultStorageFinder] - ****************************************************************************************************************************************************
+2019-06-05 18:44:26,580 INFO [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+2019-06-05 18:44:27,563 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota.xml' in directory '/Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc'.
+2019-06-05 18:44:27,571 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc'.
+2019-06-05 18:44:27,574 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-06-05 18:44:27,586 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-06-05 18:44:27,588 INFO [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+2019-06-05 18:44:27,588 INFO [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+2019-06-05 18:44:27,604 INFO [diskquota.DiskQuotaMonitor] - 22 layers attached to global quota 500.0 MB
+2019-06-05 18:44:27,647 INFO [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+2019-06-05 18:44:27,828 INFO [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+2019-06-05 18:44:27,840 INFO [georss.GeoRSSPoller] - Initializing GeoRSS poller in a background job...
+2019-06-05 18:44:27,841 INFO [georss.GeoRSSPoller] - No enabled GeoRSS feeds found, poller will not run.
+2019-06-05 18:44:27,942 INFO [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+2019-06-05 18:44:27,942 INFO [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+2019-06-05 18:44:29,570 WARN [gce.imagemosaic] - Unable to set ordering between tiff readers spi
+2019-06-05 18:44:34,540 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+2019-06-05 18:44:34,540 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+2019-06-05 18:44:34,897 INFO [geoserver.security] - Start reloading user/groups for service named default
+2019-06-05 18:44:34,905 INFO [geoserver.security] - Reloading user/groups successful for service named default
+2019-06-05 18:44:43,038 INFO [geoserver.security] - Strong cryptography is available
+2019-06-05 18:44:55,480 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/nurc_Arc_Sample does not exist or is not writable
+2019-06-05 18:44:55,508 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/nurc_Pk50095 does not exist or is not writable
+2019-06-05 18:44:55,518 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/nurc_mosaic does not exist or is not writable
+2019-06-05 18:44:55,539 INFO [gwc.layer] - Truncating TileLayer for layer group 'tiger-ny' due to a change in its layers or styles
+2019-06-05 18:44:55,610 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger-ny does not exist or is not writable
+2019-06-05 18:44:55,611 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger-ny does not exist or is not writable
+2019-06-05 18:44:55,613 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger_giant_polygon does not exist or is not writable
+2019-06-05 18:44:55,624 INFO [gwc.layer] - Truncating TileLayer for layer group 'tiger-ny' due to a change in its layers or styles
+2019-06-05 18:44:55,624 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger-ny does not exist or is not writable
+2019-06-05 18:44:55,624 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger-ny does not exist or is not writable
+2019-06-05 18:44:55,626 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger_poi does not exist or is not writable
+2019-06-05 18:44:55,633 INFO [gwc.layer] - Truncating TileLayer for layer group 'tiger-ny' due to a change in its layers or styles
+2019-06-05 18:44:55,633 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger-ny does not exist or is not writable
+2019-06-05 18:44:55,633 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger-ny does not exist or is not writable
+2019-06-05 18:44:55,636 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger_poly_landmarks does not exist or is not writable
+2019-06-05 18:44:55,643 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger-ny does not exist or is not writable
+2019-06-05 18:44:55,646 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tiger_tiger_roads does not exist or is not writable
+2019-06-05 18:44:55,656 INFO [gwc.layer] - Truncating TileLayer for layer group 'spearfish' due to a change in its layers or styles
+2019-06-05 18:44:55,775 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,776 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,778 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/sf_archsites does not exist or is not writable
+2019-06-05 18:44:55,786 INFO [gwc.layer] - Truncating TileLayer for layer group 'spearfish' due to a change in its layers or styles
+2019-06-05 18:44:55,786 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,787 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,790 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/sf_bugsites does not exist or is not writable
+2019-06-05 18:44:55,798 INFO [gwc.layer] - Truncating TileLayer for layer group 'spearfish' due to a change in its layers or styles
+2019-06-05 18:44:55,798 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,798 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,800 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/sf_restricted does not exist or is not writable
+2019-06-05 18:44:55,808 INFO [gwc.layer] - Truncating TileLayer for layer group 'spearfish' due to a change in its layers or styles
+2019-06-05 18:44:55,808 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,808 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,810 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/sf_roads does not exist or is not writable
+2019-06-05 18:44:55,818 INFO [gwc.layer] - Truncating TileLayer for layer group 'spearfish' due to a change in its layers or styles
+2019-06-05 18:44:55,819 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,819 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,821 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/sf_streams does not exist or is not writable
+2019-06-05 18:44:55,829 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/spearfish does not exist or is not writable
+2019-06-05 18:44:55,831 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/sf_sfdem does not exist or is not writable
+2019-06-05 18:44:55,839 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/topp_states does not exist or is not writable
+2019-06-05 18:44:55,851 INFO [gwc.layer] - Truncating TileLayer for layer group 'tasmania' due to a change in its layers or styles
+2019-06-05 18:44:55,852 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tasmania does not exist or is not writable
+2019-06-05 18:44:55,852 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tasmania does not exist or is not writable
+2019-06-05 18:44:55,854 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/topp_tasmania_cities does not exist or is not writable
+2019-06-05 18:44:55,861 INFO [gwc.layer] - Truncating TileLayer for layer group 'tasmania' due to a change in its layers or styles
+2019-06-05 18:44:55,861 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tasmania does not exist or is not writable
+2019-06-05 18:44:55,861 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tasmania does not exist or is not writable
+2019-06-05 18:44:55,864 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/topp_tasmania_roads does not exist or is not writable
+2019-06-05 18:44:55,870 INFO [gwc.layer] - Truncating TileLayer for layer group 'tasmania' due to a change in its layers or styles
+2019-06-05 18:44:55,871 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tasmania does not exist or is not writable
+2019-06-05 18:44:55,871 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tasmania does not exist or is not writable
+2019-06-05 18:44:55,873 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/topp_tasmania_state_boundaries does not exist or is not writable
+2019-06-05 18:44:55,879 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/tasmania does not exist or is not writable
+2019-06-05 18:44:55,882 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/topp_tasmania_water_bodies does not exist or is not writable
+2019-06-05 18:44:55,890 INFO [file.FileBlobStore] - /Users/stefan/Downloads/geoserver-2.15.1/data_dir/gwc/nurc_Img_Sample does not exist or is not writable
+2019-06-05 18:45:41,980 INFO [georss.GeoRSSPoller] - destroy() invoked
+2019-06-05 18:45:41,981 INFO [geowebcache.GeoWebCacheDispatcher] - GeoWebCacheDispatcher.destroy() was invoked, shutting down.
+2019-06-05 18:45:41,982 INFO [diskquota.DiskQuotaMonitor] - Disk quota monitor shutting down...
+2019-06-05 18:45:41,982 INFO [diskquota.DiskQuotaMonitor] - Shutting down quota usage monitor...
+2019-06-05 18:45:41,982 INFO [diskquota.QuotaUpdatesMonitor] - Shutting down quota usage monitor...
+2019-06-05 18:45:41,986 INFO [diskquota.DiskQuotaMonitor] - Shutting down quota statistics gathering monitor...
+2019-06-05 18:45:41,986 INFO [diskquota.QueuedQuotaUpdatesConsumer] - Shutting down quota update background task due to InterruptedException
+2019-06-05 18:45:41,986 INFO [diskquota.QueuedUsageStatsConsumer] - Shutting down quota update background task due to interrupted exception
+2019-06-05 18:45:41,987 INFO [seed.SeederThreadPoolExecutor] - Initiating shut down for running and pending seed tasks...
+2019-06-05 18:45:41,987 INFO [seed.SeederThreadPoolExecutor] - Seeder thread pool executor shut down complete.
+2019-06-05 18:45:41,987 INFO [storage.DefaultStorageBroker] - Destroying StorageBroker
+2019-06-22 16:26:48,333 INFO [org.geoserver] - GeoServer configuration lock is enabled
+2019-06-22 16:26:48,607 INFO [org.geoserver] - Loaded style 'pophatch'
+2019-06-22 16:26:48,609 INFO [org.geoserver] - Loaded style 'simple_roads'
+2019-06-22 16:26:48,611 INFO [org.geoserver] - Loaded style 'giant_polygon'
+2019-06-22 16:26:48,613 INFO [org.geoserver] - Loaded style 'burg'
+2019-06-22 16:26:48,615 INFO [org.geoserver] - Loaded style 'poi'
+2019-06-22 16:26:48,617 INFO [org.geoserver] - Loaded style 'population'
+2019-06-22 16:26:48,619 INFO [org.geoserver] - Loaded style 'polygon'
+2019-06-22 16:26:48,621 INFO [org.geoserver] - Loaded style 'raster'
+2019-06-22 16:26:48,623 INFO [org.geoserver] - Loaded style 'simple_streams'
+2019-06-22 16:26:48,625 INFO [org.geoserver] - Loaded style 'restricted'
+2019-06-22 16:26:48,628 INFO [org.geoserver] - Loaded style 'point'
+2019-06-22 16:26:48,631 INFO [org.geoserver] - Loaded style 'grass'
+2019-06-22 16:26:48,633 INFO [org.geoserver] - Loaded style 'tiger_roads'
+2019-06-22 16:26:48,635 INFO [org.geoserver] - Loaded style 'dem'
+2019-06-22 16:26:48,638 INFO [org.geoserver] - Loaded style 'poly_landmarks'
+2019-06-22 16:26:48,643 INFO [org.geoserver] - Loaded style 'green'
+2019-06-22 16:26:48,646 INFO [org.geoserver] - Loaded style 'generic'
+2019-06-22 16:26:48,647 INFO [org.geoserver] - Loaded style 'capitals'
+2019-06-22 16:26:48,650 INFO [org.geoserver] - Loaded style 'line'
+2019-06-22 16:26:48,652 INFO [org.geoserver] - Loaded style 'npl_grundnutzung'
+2019-06-22 16:26:48,654 INFO [org.geoserver] - Loaded style 'cite_lakes'
+2019-06-22 16:26:48,656 INFO [org.geoserver] - Loaded style 'rain'
+2019-06-22 16:26:48,668 INFO [org.geoserver] - Loaded default workspace nplso
+2019-06-22 16:26:48,779 INFO [org.geoserver] - Loaded workspace 'nplso'
+2019-06-22 16:26:49,025 INFO [org.geoserver] - Loaded service 'wms', enabled
+2019-06-22 16:26:49,071 INFO [org.geoserver] - Loaded service 'wfs', enabled
+2019-06-22 16:26:49,082 INFO [org.geoserver] - Loaded service 'WMTSInfoImpl-356cec74:16b80030176:-8000', enabled
+2019-06-22 16:26:49,113 INFO [org.geoserver] - Loaded service 'wcs', enabled
+2019-06-22 16:26:49,170 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache.xml' in directory '/var/local/geoserver/gwc'.
+2019-06-22 16:26:49,257 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-22 16:26:49,260 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-22 16:26:49,263 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-22 16:26:49,349 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-06-22 16:26:49,350 WARN [config.XMLConfiguration] - *** GWC configuration validation error: cvc-elt.1.a: Cannot find the declaration of element 'gwcConfiguration'.
+2019-06-22 16:26:49,352 WARN [config.XMLConfiguration] - *** Will try to use configuration anyway. Please check the order of declared elements against the schema.
+2019-06-22 16:26:49,353 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-06-22 16:26:49,395 INFO [config.XMLConfiguration] - Initializing GridSets from gwc
+2019-06-22 16:26:49,399 INFO [config.XMLConfiguration] - Initializing layers from gwc
+2019-06-22 16:26:49,481 INFO [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+2019-06-22 16:26:49,483 INFO [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+2019-06-22 16:26:49,484 INFO [gwc.layer] - Loading tile layers from gwc-layers
+2019-06-22 16:26:49,499 INFO [storage.BlobStoreAggregator] - BlobStoreConfiguration gwc contained no blob store infos.
+2019-06-22 16:26:49,514 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-06-22 16:26:49,515 INFO [storage.DefaultStorageFinder] - *** Found Java environment variable GEOSERVER_DATA_DIR set to /var/local/geoserver, using it as the default prefix. ***
+2019-06-22 16:26:49,516 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-06-22 16:26:49,632 INFO [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+2019-06-22 16:26:49,749 WARN [gce.imagemosaic] - Unable to set ordering between tiff readers spi
+2019-06-22 16:26:50,769 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota.xml' in directory '/var/local/geoserver/gwc'.
+2019-06-22 16:26:50,787 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/var/local/geoserver/gwc'.
+2019-06-22 16:26:50,795 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-06-22 16:26:50,814 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-06-22 16:26:50,818 INFO [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+2019-06-22 16:26:50,819 INFO [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+2019-06-22 16:26:50,830 INFO [diskquota.DiskQuotaMonitor] - 0 layers attached to global quota 500.0 MB
+2019-06-22 16:26:50,852 INFO [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+2019-06-22 16:26:55,920 INFO [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+2019-06-22 16:26:55,942 INFO [georss.GeoRSSPoller] - Initializing GeoRSS poller in a background job...
+2019-06-22 16:26:55,950 INFO [georss.GeoRSSPoller] - No enabled GeoRSS feeds found, poller will not run.
+2019-06-22 16:26:56,064 INFO [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+2019-06-22 16:26:56,066 INFO [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+2019-06-22 16:26:59,931 INFO [geoserver.security] - Start reloading user/groups for service named default
+2019-06-22 16:26:59,942 INFO [geoserver.security] - Reloading user/groups successful for service named default
+2019-06-22 16:27:00,547 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+2019-06-22 16:27:00,550 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+2019-06-22 16:27:06,245 INFO [geoserver.security] - Strong cryptography is available
+2019-06-29 13:18:04,214 INFO [org.geoserver] - GeoServer configuration lock is enabled
+2019-06-29 13:18:04,430 INFO [org.geoserver] - Loaded style 'simple_roads'
+2019-06-29 13:18:04,432 INFO [org.geoserver] - Loaded style 'pophatch'
+2019-06-29 13:18:04,433 INFO [org.geoserver] - Loaded style 'burg'
+2019-06-29 13:18:04,436 INFO [org.geoserver] - Loaded style 'giant_polygon'
+2019-06-29 13:18:04,439 INFO [org.geoserver] - Loaded style 'poi'
+2019-06-29 13:18:04,441 INFO [org.geoserver] - Loaded style 'population'
+2019-06-29 13:18:04,443 INFO [org.geoserver] - Loaded style 'polygon'
+2019-06-29 13:18:04,445 INFO [org.geoserver] - Loaded style 'raster'
+2019-06-29 13:18:04,447 INFO [org.geoserver] - Loaded style 'simple_streams'
+2019-06-29 13:18:04,449 INFO [org.geoserver] - Loaded style 'tiger_roads'
+2019-06-29 13:18:04,452 INFO [org.geoserver] - Loaded style 'restricted'
+2019-06-29 13:18:04,454 INFO [org.geoserver] - Loaded style 'grass'
+2019-06-29 13:18:04,457 INFO [org.geoserver] - Loaded style 'point'
+2019-06-29 13:18:04,459 INFO [org.geoserver] - Loaded style 'dem'
+2019-06-29 13:18:04,461 INFO [org.geoserver] - Loaded style 'poly_landmarks'
+2019-06-29 13:18:04,464 INFO [org.geoserver] - Loaded style 'green'
+2019-06-29 13:18:04,469 INFO [org.geoserver] - Loaded style 'generic'
+2019-06-29 13:18:04,471 INFO [org.geoserver] - Loaded style 'npl_grundnutzung'
+2019-06-29 13:18:04,473 INFO [org.geoserver] - Loaded style 'capitals'
+2019-06-29 13:18:04,475 INFO [org.geoserver] - Loaded style 'line'
+2019-06-29 13:18:04,476 INFO [org.geoserver] - Loaded style 'rain'
+2019-06-29 13:18:04,478 INFO [org.geoserver] - Loaded style 'cite_lakes'
+2019-06-29 13:18:04,487 INFO [org.geoserver] - Loaded default workspace sogis
+2019-06-29 13:18:04,516 INFO [org.geoserver] - Loaded workspace 'sogis'
+2019-06-29 13:18:04,781 INFO [org.geoserver] - Loaded service 'wms', enabled
+2019-06-29 13:18:04,807 INFO [org.geoserver] - Loaded service 'wfs', enabled
+2019-06-29 13:18:04,813 INFO [org.geoserver] - Loaded service 'WMTSInfoImpl-4ca2a14d:16ba362ba0b:-8000', enabled
+2019-06-29 13:18:04,831 INFO [org.geoserver] - Loaded service 'wcs', enabled
+2019-06-29 13:18:04,883 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache.xml' in directory '/var/local/geoserver/gwc'.
+2019-06-29 13:18:04,963 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-29 13:18:04,965 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-29 13:18:04,968 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-06-29 13:18:05,040 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-06-29 13:18:05,041 WARN [config.XMLConfiguration] - *** GWC configuration validation error: cvc-elt.1.a: Cannot find the declaration of element 'gwcConfiguration'.
+2019-06-29 13:18:05,042 WARN [config.XMLConfiguration] - *** Will try to use configuration anyway. Please check the order of declared elements against the schema.
+2019-06-29 13:18:05,043 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-06-29 13:18:05,100 INFO [config.XMLConfiguration] - Initializing GridSets from gwc
+2019-06-29 13:18:05,104 INFO [config.XMLConfiguration] - Initializing layers from gwc
+2019-06-29 13:18:05,193 INFO [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+2019-06-29 13:18:05,194 INFO [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+2019-06-29 13:18:05,195 INFO [gwc.layer] - Loading tile layers from gwc-layers
+2019-06-29 13:18:05,210 INFO [storage.BlobStoreAggregator] - BlobStoreConfiguration gwc contained no blob store infos.
+2019-06-29 13:18:05,224 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-06-29 13:18:05,225 INFO [storage.DefaultStorageFinder] - *** Found Java environment variable GEOSERVER_DATA_DIR set to /var/local/geoserver, using it as the default prefix. ***
+2019-06-29 13:18:05,226 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-06-29 13:18:05,323 INFO [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+2019-06-29 13:18:05,421 WARN [gce.imagemosaic] - Unable to set ordering between tiff readers spi
+2019-06-29 13:18:06,258 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota.xml' in directory '/var/local/geoserver/gwc'.
+2019-06-29 13:18:06,273 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/var/local/geoserver/gwc'.
+2019-06-29 13:18:06,280 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-06-29 13:18:06,294 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-06-29 13:18:06,297 INFO [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+2019-06-29 13:18:06,298 INFO [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+2019-06-29 13:18:06,321 INFO [diskquota.DiskQuotaMonitor] - 0 layers attached to global quota 500.0 MB
+2019-06-29 13:18:06,337 INFO [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+2019-06-29 13:18:10,777 INFO [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+2019-06-29 13:18:10,792 INFO [georss.GeoRSSPoller] - Initializing GeoRSS poller in a background job...
+2019-06-29 13:18:10,798 INFO [georss.GeoRSSPoller] - No enabled GeoRSS feeds found, poller will not run.
+2019-06-29 13:18:10,878 INFO [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+2019-06-29 13:18:10,879 INFO [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+2019-06-29 13:18:14,057 INFO [geoserver.security] - Start reloading user/groups for service named default
+2019-06-29 13:18:14,069 INFO [geoserver.security] - Reloading user/groups successful for service named default
+2019-06-29 13:18:14,422 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+2019-06-29 13:18:14,424 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+2019-06-29 13:18:19,162 INFO [geoserver.security] - Strong cryptography is available
+2019-06-29 13:18:57,444 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:18:57,705 INFO [geoserver.wms] - 
+Request: getLegendGraphic
+	BaseUrl = http://localhost:8080/geoserver/
+	Env = {}
+	Exceptions = SE_XML
+	FeatureType = null
+	Format = image/png
+	Get = false
+	Height = 20
+	Kvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=polygon, WIDTH=20, HEIGHT=20}
+	Layers = [null]
+	LegendOptions = {}
+	Legends = [LegendRequest [layer=, name= styleName=polygon, title=null, legendInfo=null]]
+	Locale = null
+	RawKvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=polygon, WIDTH=20, HEIGHT=20}
+	Request = GetLegendGraphic
+	RequestCharset = null
+	Rules = [null]
+	Scale = -1.0
+	Strict = false
+	Styles = [StyleImpl[ name=polygon]]
+	Transparent = false
+	Version = 1.0.0
+	Width = 20
+	Wms = org.geoserver.wms.WMS@70e62b72
+2019-06-29 13:19:00,750 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:02,709 INFO [geoserver.wms] - 
+Request: getLegendGraphic
+	BaseUrl = http://localhost:8080/geoserver/
+	Env = {}
+	Exceptions = SE_XML
+	FeatureType = null
+	Format = image/png
+	Get = false
+	Height = 20
+	Kvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=npl_grundnutzung, WIDTH=20, HEIGHT=20}
+	Layers = [null]
+	LegendOptions = {}
+	Legends = [LegendRequest [layer=, name= styleName=npl_grundnutzung, title=null, legendInfo=null]]
+	Locale = null
+	RawKvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=npl_grundnutzung, WIDTH=20, HEIGHT=20}
+	Request = GetLegendGraphic
+	RequestCharset = null
+	Rules = [null]
+	Scale = -1.0
+	Strict = false
+	Styles = [StyleImpl[ name=npl_grundnutzung]]
+	Transparent = false
+	Version = 1.0.0
+	Width = 20
+	Wms = org.geoserver.wms.WMS@70e62b72
+2019-06-29 13:19:06,808 INFO [geoserver.gwc] - Saving GeoSeverTileLayer sogis:npl_grundnutzung
+2019-06-29 13:19:09,351 WARN [geoserver.web] - Unable to find property: 'format.wms.rss' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-29 13:19:09,353 WARN [geoserver.web] - Unable to find property: 'format.wms.application/vnd.google-earth.kml' for component:  [class=org.geoserver.web.demo.MapPreviewPage]. Locale: null, style: null
+2019-06-29 13:19:12,204 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:12,537 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2637457.705 : 2640056.222, 1250408.875 : 1252131.905]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/openlayers
+	FormatOptions = {}
+	Get = true
+	Height = 509
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a9f137e6]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, SRS=EPSG:2056, FORMAT=application/openlayers, BBOX=2637457.705,1250408.875,2640056.222,1252131.905, VERSION=1.1.0, SERVICE=WMS, WIDTH=768, HEIGHT=509, LAYERS=sogis:npl_grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=npl_grundnutzung]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.0
+	ViewParams = null
+	Width = 768
+2019-06-29 13:19:13,417 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:13,772 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2636926.545940123 : 2640591.4160642517, 1250057.1359526296 : 1252486.0668031266]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 510
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a9f137e6]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2636926.545940123,1250057.1359526296,2640591.4160642517,1252486.0668031266, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=510, TRANSPARENT=true, LAYERS=sogis:npl_grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=npl_grundnutzung]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-06-29 13:19:15,163 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:15,381 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2638661.752188673 : 2639119.860954189, 1250993.9325883626 : 1251297.548944675]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 510
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a9f137e6]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2638661.752188673,1250993.9325883626,2639119.860954189,1251297.548944675, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=510, TRANSPARENT=true, LAYERS=sogis:npl_grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=npl_grundnutzung]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+2019-06-29 13:19:16,243 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:16,385 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8080/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[2638845.067460778 : 2638905.31353541, 1251134.2768630846 : 1251194.5229377165]
+ layers: sogis:npl_grundnutzung
+ styles: npl_grundnutzung
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a9f137e6]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=sogis:npl_grundnutzung, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:2056, BBOX=2638845.067460778,1251134.2768630846,2638905.31353541,1251194.5229377165, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=sogis:npl_grundnutzung, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-29 13:19:23,638 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:23,723 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8080/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[2638796.63246877 : 2638856.8785434016, 1251068.1660232206 : 1251128.4120978524]
+ layers: sogis:npl_grundnutzung
+ styles: npl_grundnutzung
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a9f137e6]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=sogis:npl_grundnutzung, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:2056, BBOX=2638796.63246877,1251068.1660232206,2638856.8785434016,1251128.4120978524, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=sogis:npl_grundnutzung, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-29 13:19:24,746 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:24,799 INFO [geoserver.wms] - 
+Request: getFeatureInfo
+	BaseUrl = http://localhost:8080/geoserver/
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureCount = 50
+	Get = false
+	GetMapRequest = 
+GetMap Request
+ version: 1.1.1
+ output format: image/png
+ width height: 101,101
+ bbox: SRSEnvelope[2638828.9480941207 : 2638889.1941687525, 1251110.7805211684 : 1251171.0265958002]
+ layers: sogis:npl_grundnutzung
+ styles: npl_grundnutzung
+	InfoFormat = text/html
+	PropertyNames = null
+	QueryLayers = [org.geoserver.wms.MapLayerInfo@a9f137e6]
+	RawKvp = {FORMAT=image/png, INFO_FORMAT=text/html, STYLES=, WIDTH=101, HEIGHT=101, LAYERS=sogis:npl_grundnutzung, EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetFeatureInfo, SRS=EPSG:2056, BBOX=2638828.9480941207,1251110.7805211684,2638889.1941687525,1251171.0265958002, VERSION=1.1.1, X=50, Y=50, SERVICE=WMS, QUERY_LAYERS=sogis:npl_grundnutzung, TRANSPARENT=true, FEATURE_COUNT=50}
+	Request = GetFeatureInfo
+	RequestCharset = null
+	Version = 1.1.1
+	XPixel = 50
+	YPixel = 50
+2019-06-29 13:19:28,250 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-06-29 13:19:28,316 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2637060.160996732 : 2640725.0311208605, 1249799.4497720266 : 1252228.3806225236]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 510
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@a9f137e6]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2637060.160996732,1249799.4497720266,2640725.0311208605,1252228.3806225236, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=510, TRANSPARENT=true, LAYERS=sogis:npl_grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=npl_grundnutzung]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-07-08 15:34:35,555 INFO [org.geoserver] - GeoServer configuration lock is enabled
+2019-07-08 15:34:35,641 INFO [org.geoserver] - Loading catalog...
+2019-07-08 15:34:35,914 INFO [org.geoserver] - Loaded style 'simple_roads'
+2019-07-08 15:34:35,916 INFO [org.geoserver] - Loaded style 'pophatch'
+2019-07-08 15:34:35,918 INFO [org.geoserver] - Loaded style 'giant_polygon'
+2019-07-08 15:34:35,919 INFO [org.geoserver] - Loaded style 'poi'
+2019-07-08 15:34:35,921 INFO [org.geoserver] - Loaded style 'population'
+2019-07-08 15:34:35,923 INFO [org.geoserver] - Loaded style 'polygon'
+2019-07-08 15:34:35,924 INFO [org.geoserver] - Loaded style 'raster'
+2019-07-08 15:34:35,926 INFO [org.geoserver] - Loaded style 'burg'
+2019-07-08 15:34:35,927 INFO [org.geoserver] - Loaded style 'simple_streams'
+2019-07-08 15:34:35,929 INFO [org.geoserver] - Loaded style 'restricted'
+2019-07-08 15:34:35,931 INFO [org.geoserver] - Loaded style 'tiger_roads'
+2019-07-08 15:34:35,933 INFO [org.geoserver] - Loaded style 'point'
+2019-07-08 15:34:35,935 INFO [org.geoserver] - Loaded style 'grass'
+2019-07-08 15:34:35,937 INFO [org.geoserver] - Loaded style 'dem'
+2019-07-08 15:34:35,939 INFO [org.geoserver] - Loaded style 'poly_landmarks'
+2019-07-08 15:34:35,942 INFO [org.geoserver] - Loaded style 'green'
+2019-07-08 15:34:35,944 INFO [org.geoserver] - Loaded style 'generic'
+2019-07-08 15:34:35,947 INFO [org.geoserver] - Loaded style 'capitals'
+2019-07-08 15:34:35,949 INFO [org.geoserver] - Loaded style 'npl_grundnutzung'
+2019-07-08 15:34:35,954 INFO [org.geoserver] - Loaded style 'line'
+2019-07-08 15:34:35,957 INFO [org.geoserver] - Loaded style 'cite_lakes'
+2019-07-08 15:34:35,959 INFO [org.geoserver] - Loaded style 'rain'
+2019-07-08 15:34:35,969 INFO [org.geoserver] - Loaded default workspace sogis
+2019-07-08 15:34:36,003 INFO [org.geoserver] - Loaded workspace 'sogis'
+2019-07-08 15:34:36,470 INFO [org.geoserver] - Loaded data store 'npl_grundnutzung', enabled
+2019-07-08 15:34:37,771 INFO [org.geoserver] - Loaded feature type 'npl_grundnutzung', enabled
+2019-07-08 15:34:37,786 INFO [org.geoserver] - Loaded layer 'npl_grundnutzung'
+2019-07-08 15:34:37,792 INFO [org.geoserver] - Read catalog in 2.150 s
+2019-07-08 15:34:37,818 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache.xml' in directory '/var/local/geoserver/gwc'.
+2019-07-08 15:34:37,885 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-07-08 15:34:37,888 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-07-08 15:34:37,890 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-07-08 15:34:37,959 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-07-08 15:34:37,960 WARN [config.XMLConfiguration] - *** GWC configuration validation error: cvc-elt.1.a: Cannot find the declaration of element 'gwcConfiguration'.
+2019-07-08 15:34:37,961 WARN [config.XMLConfiguration] - *** Will try to use configuration anyway. Please check the order of declared elements against the schema.
+2019-07-08 15:34:37,962 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-07-08 15:34:38,011 INFO [config.XMLConfiguration] - Initializing GridSets from gwc
+2019-07-08 15:34:38,014 INFO [config.XMLConfiguration] - Initializing layers from gwc
+2019-07-08 15:34:38,054 INFO [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+2019-07-08 15:34:38,056 INFO [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+2019-07-08 15:34:38,057 INFO [gwc.layer] - Loading tile layers from gwc-layers
+2019-07-08 15:34:38,087 INFO [gwc.layer] - Loaded 1 tile layers in 28.77 ms
+2019-07-08 15:34:38,100 INFO [storage.BlobStoreAggregator] - BlobStoreConfiguration gwc contained no blob store infos.
+2019-07-08 15:34:38,111 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-07-08 15:34:38,111 INFO [storage.DefaultStorageFinder] - *** Found Java environment variable GEOSERVER_DATA_DIR set to /var/local/geoserver, using it as the default prefix. ***
+2019-07-08 15:34:38,113 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-07-08 15:34:38,208 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota.xml' in directory '/var/local/geoserver/gwc'.
+2019-07-08 15:34:38,220 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/var/local/geoserver/gwc'.
+2019-07-08 15:34:38,226 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-07-08 15:34:38,237 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-07-08 15:34:38,239 INFO [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+2019-07-08 15:34:38,241 INFO [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+2019-07-08 15:34:38,246 INFO [diskquota.DiskQuotaMonitor] - 1 layers attached to global quota 500.0 MB
+2019-07-08 15:34:38,275 INFO [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+2019-07-08 15:34:38,393 INFO [org.geoserver] - Loaded service 'wms', enabled
+2019-07-08 15:34:38,398 INFO [org.geoserver] - Loaded service 'WMTSInfoImpl-7c4f3b4f:16bd238fc3d:-8000', enabled
+2019-07-08 15:34:38,415 INFO [org.geoserver] - Loaded service 'wcs', enabled
+2019-07-08 15:34:38,439 INFO [org.geoserver] - Loaded service 'wfs', enabled
+2019-07-08 15:34:38,477 INFO [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+2019-07-08 15:34:39,491 INFO [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+2019-07-08 15:34:39,506 INFO [georss.GeoRSSPoller] - Initializing GeoRSS poller in a background job...
+2019-07-08 15:34:39,512 INFO [georss.GeoRSSPoller] - No enabled GeoRSS feeds found, poller will not run.
+2019-07-08 15:34:39,614 INFO [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+2019-07-08 15:34:39,614 INFO [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+2019-07-08 15:34:44,177 WARN [gce.imagemosaic] - Unable to set ordering between tiff readers spi
+2019-07-08 15:34:45,546 INFO [geoserver.security] - Start reloading user/groups for service named default
+2019-07-08 15:34:45,555 INFO [geoserver.security] - Reloading user/groups successful for service named default
+2019-07-08 15:34:45,916 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+2019-07-08 15:34:45,918 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+2019-07-08 15:35:19,486 INFO [geoserver.security] - Strong cryptography is available
+2019-07-08 15:43:49,970 INFO [geoserver.gwc] - Saving GeoSeverTileLayer oereb:ch.so.arp.nutzungsplanung.grundnutzung
+2019-07-08 15:43:54,426 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:43:54,446 ERROR [geoserver.ows] - 
+org.geoserver.platform.ServiceException: Could not find layer sogis:ch.so.arp.nutzungsplanung.grundnutzung.oereb
+	at org.geoserver.wms.map.GetMapKvpRequestReader.parseLayers(GetMapKvpRequestReader.java:1296)
+	at org.geoserver.wms.map.GetMapKvpRequestReader.read(GetMapKvpRequestReader.java:294)
+	at org.geoserver.wms.map.GetMapKvpRequestReader.read(GetMapKvpRequestReader.java:86)
+	at org.geoserver.ows.Dispatcher.parseRequestKVP(Dispatcher.java:1548)
+	at org.geoserver.ows.Dispatcher.dispatch(Dispatcher.java:691)
+	at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:254)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:177)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:352)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:171)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:69)
+	at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:73)
+	at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:66)
+	at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:41)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:51)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:70)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:52)
+	at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:74)
+	at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:142)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:90)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.filters.XFrameOptionsFilter.doFilter(XFrameOptionsFilter.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1839)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-07-08 15:44:03,469 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:03,848 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2599216.944 : 2639192.926, 1214705.586 : 1251294.0]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = application/openlayers
+	FormatOptions = {}
+	Get = true
+	Height = 702
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, SRS=EPSG:2056, FORMAT=application/openlayers, BBOX=2599216.944,1214705.586,2639192.926,1251294.0, VERSION=1.1.0, SERVICE=WMS, WIDTH=768, HEIGHT=702, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.0
+	ViewParams = null
+	Width = 768
+2019-07-08 15:44:04,257 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:04,493 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2589917.9058453394 : 2648555.8278314015, 1206200.379603923 : 1259799.1051693081]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 702
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2589917.9058453394,1206200.379603923,2648555.8278314015,1259799.1051693081, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=702, TRANSPARENT=true, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-07-08 15:44:06,147 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:06,197 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2597152.206767448 : 2611811.6872639637, 1213873.701426318 : 1227273.3828176642]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 702
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2597152.206767448,1213873.701426318,2611811.6872639637,1227273.3828176642, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=702, TRANSPARENT=true, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-07-08 15:44:07,547 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:07,570 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2606238.030616851 : 2620897.5111133666, 1222482.3286449749 : 1235882.0100363211]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 702
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2606238.030616851,1222482.3286449749,2620897.5111133666,1235882.0100363211, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=702, TRANSPARENT=true, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-07-08 15:44:08,446 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:08,463 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2609902.9007409797 : 2624562.381237495, 1228265.9518096158 : 1241665.633200962]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 702
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2609902.9007409797,1228265.9518096158,2624562.381237495,1241665.633200962, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=702, TRANSPARENT=true, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-07-08 15:44:09,347 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:09,395 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2545099.5982856797 : 2662375.442257805, 1174743.57770515 : 1281941.0288359202]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 702
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2545099.5982856797,1174743.57770515,2662375.442257805,1281941.0288359202, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=702, TRANSPARENT=true, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+2019-07-08 15:44:10,165 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:10,211 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2322306.0353230108 : 2791409.4112115093, 990125.7452021568 : 1418915.5497252378]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 703
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2322306.0353230108,990125.7452021568,2791409.4112115093,1418915.5497252378, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=703, TRANSPARENT=true, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 768
+2019-07-08 15:44:11,288 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-07-08 15:44:11,335 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[2558842.861251163 : 2676118.705223288, 1186807.1085304075 : 1294004.5596611777]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["CH1903+ / LV95", 
+  GEOGCS["CH1903+", 
+    DATUM["CH1903+", 
+      SPHEROID["Bessel 1841", 6377397.155, 299.1528128, AUTHORITY["EPSG","7004"]], 
+      TOWGS84[674.374, 15.056, 405.346, 0.0, 0.0, 0.0, 0.0], 
+      AUTHORITY["EPSG","6150"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic longitude", EAST], 
+    AXIS["Geodetic latitude", NORTH], 
+    AUTHORITY["EPSG","4150"]], 
+  PROJECTION["Oblique_Mercator", AUTHORITY["EPSG","9815"]], 
+  PARAMETER["longitude_of_center", 7.439583333333333], 
+  PARAMETER["latitude_of_center", 46.952405555555565], 
+  PARAMETER["azimuth", 90.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 2600000.0], 
+  PARAMETER["false_northing", 1200000.0], 
+  PARAMETER["rectified_grid_angle", 90.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","2056"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 702
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@74ba77ac]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:2056, BBOX=2558842.861251163,1186807.1085304075,2676118.705223288,1294004.5596611777, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=702, TRANSPARENT=true, LAYERS=oereb:ch.so.arp.nutzungsplanung.grundnutzung}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:2056
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=polygon]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
