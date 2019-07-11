@@ -49,6 +49,8 @@ services:
   server:
     image: abiosoft/caddy
     #container_name: caddy
+    environment:
+      ACME_AGREE: true
     restart: always
     ports:
       - "80:80"
