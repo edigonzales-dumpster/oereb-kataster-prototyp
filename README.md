@@ -20,6 +20,12 @@ docker-compose -f docker-compose.yml -f docker-compose.geoserver.dev.yml up
 ```
 Started sämtliche Container und verwendet für Geoserver die Parameter und Optionen aus dem zusätzlichen `yml`-File.
 
+```
+docker-compose -f docker-compose.yml -f docker-compose.caddy.dev.yml up
+```
+Dito für Caddy.
+
+
 ## Applikationen
 ### oereb-web-service
 Der Quellcode des ÖREB Web service wird in [Github](https://github.com/claeis/oereb-web-service) verwaltet. Die resultierende Jar-Datei wird in [Bintray](https://dl.bintray.com/claeis/oereb-web-service/ch/ehi/oereb/oereb-web-service/) publiziert. Es handelt sich dabei nicht um eine "Fatjar"-Datei. Der Server (das Fatjar) wird erst beim Erstellen des Docker-Images erzeugt (siehe `build.gradle`). Um das Image auf Dockerhub zu pushen, müssen entsprechende Umgebungsvariablen gesetzt sein (siehe `.travis.yml`).

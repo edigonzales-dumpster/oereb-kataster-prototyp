@@ -1,0 +1,9 @@
+version: '3'
+services:
+  server:
+    image: abiosoft/caddy
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - "./caddy/Caddyfile.dev:/etc/Caddyfile"

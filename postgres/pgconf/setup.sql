@@ -21283,7 +21283,6 @@ INSERT INTO live.T_ILI2DB_META_ATTRS (ilielement,attr_name,attr_value) VALUES ('
 INSERT INTO live.T_ILI2DB_META_ATTRS (ilielement,attr_name,attr_value) VALUES ('OeREBKRMtrsfr_V1_1','furtherInformation','http://www.cadastre.ch/oereb-public');
 INSERT INTO live.T_ILI2DB_META_ATTRS (ilielement,attr_name,attr_value) VALUES ('OeREBKRMtrsfr_V1_1','technicalContact','mailto:infovd@swisstopo.ch');
 
-
 CREATE MATERIALIZED VIEW live.v_nutzungsplanung_grundnutzung AS 
 WITH RECURSIVE x(ursprung, hinweis, parents, last_ursprung, depth) AS 
 (

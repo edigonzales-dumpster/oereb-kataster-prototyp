@@ -1,7 +1,10 @@
 http://localhost 
 tls stefan.ziegler.de@gmail.com
 
-proxy / web-service:8081/ 
+proxy /ws web-service:8181 {
+    transparent
+}
+
 proxy /geoserver wms:8080 {
     transparent
 }
@@ -11,3 +14,5 @@ proxy /geoserver wms:8080 {
 #proxy /wms wms:8080/geoserver/wms 
 #proxy /ows wms:8080/geoserver/ows 
 
+log stdout
+errors stdout

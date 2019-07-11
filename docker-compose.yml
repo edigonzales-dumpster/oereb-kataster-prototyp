@@ -20,7 +20,8 @@ services:
     ports:
       - "54321:5432"
     volumes:
-      - ~/oereb-pgdata:/pgdata:delegated
+      #- ~/oereb-pgdata:/pgdata:delegated
+      - /tmp:/pgdata:delegated
     restart: always
   web-service:
     depends_on:
@@ -32,9 +33,11 @@ services:
       DBUSR: admin
       DBPWD: admin
       DBSCHEMA: live
+      SERVER_SERVLET_CONTEXT_PATH: /ws
+      SERVER_PORT: 8181
       #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
     ports:
-      - "8081:8080"
+      - "8181:8181"
     restart: always
   wms:
     depends_on:
@@ -53,8 +56,8 @@ services:
       ACME_AGREE: "true"
     restart: always
     ports:
-      #- "80:80"
+      - "80:80"
       - "443:443"
     volumes:
-      - "~/.caddy:/root/.caddy"
+      #- "~/.caddy:/root/.caddy"
       - "./caddy/Caddyfile:/etc/Caddyfile"
