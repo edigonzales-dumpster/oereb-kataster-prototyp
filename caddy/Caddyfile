@@ -1,5 +1,7 @@
-http://sogeo.services 
-#tls stefan.ziegler.de@gmail.com
+sogeo.services 
+tls stefan.ziegler.de@gmail.com {
+    max_certs 10
+}
 
 proxy / web-service:8081 {
     transparent
