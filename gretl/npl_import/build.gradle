@@ -47,3 +47,11 @@ task replaceLandUsePlanningData() {
 replaceLandUsePlanningData.dependsOn {
     tasks.findAll { task -> task.name.startsWith('replaceLandUsePlanningData_') }
 }
+
+// must be owner of materialized view...
+task refreshMaterializedViews(type: SqlExecutor) {
+    group = GROUP
+    description = "Rechnet sämtliche materialisierten Views neu."
+    database = [dbUriOereb, dbUserOereb, dbPwdOereb]
+    sqlFiles = ["refresh_materialized_views.sql"]
+} 

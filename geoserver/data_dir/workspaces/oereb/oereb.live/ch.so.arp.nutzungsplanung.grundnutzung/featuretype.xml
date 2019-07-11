@@ -1,14 +1,15 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-7c4f3b4f:16bd238fc3d:-7ffb</id>
+  <id>FeatureTypeInfoImpl--5be3950d:16be13a71da:-7ffd</id>
   <name>ch.so.arp.nutzungsplanung.grundnutzung</name>
-  <nativeName>ch.so.arp.nutzungsplanung.grundnutzung</nativeName>
+  <nativeName>v_nutzungsplanung_grundnutzung</nativeName>
   <namespace>
     <id>NamespaceInfoImpl-7c4f3b4f:16bd238fc3d:-7ffe</id>
   </namespace>
-  <title>ch.so.arp.nutzungsplanung.grundnutzung</title>
+  <title>Nutzungsplanung - Grundnutzung</title>
+  <abstract>Grundnutzung der Nutzungsplanung</abstract>
   <keywords>
     <string>features</string>
-    <string>ch.so.arp.nutzungsplanung.grundnutzung</string>
+    <string>v_nutzungsplanung_grundnutzung</string>
   </keywords>
   <nativeCRS class="projected">PROJCS[&quot;CH1903+ / LV95&quot;, 
   GEOGCS[&quot;CH1903+&quot;, 
@@ -35,49 +36,22 @@
   AUTHORITY[&quot;EPSG&quot;,&quot;2056&quot;]]</nativeCRS>
   <srs>EPSG:2056</srs>
   <nativeBoundingBox>
-    <minx>2599216.944</minx>
-    <maxx>2639192.926</maxx>
-    <miny>1214705.586</miny>
-    <maxy>1251294.0</maxy>
+    <minx>2599016.75</minx>
+    <maxx>2639393.0</maxx>
+    <miny>1214522.5</miny>
+    <maxy>1251477.0</maxy>
     <crs class="projected">EPSG:2056</crs>
   </nativeBoundingBox>
   <latLonBoundingBox>
-    <minx>7.428247936412352</minx>
-    <maxx>7.957921870560755</maxx>
-    <miny>47.0822041339043</miny>
-    <maxy>47.412456722362656</maxy>
+    <minx>7.425594934422907</minx>
+    <maxx>7.960588845716402</maxx>
+    <miny>47.08054546679827</miny>
+    <maxy>47.41410236120068</maxy>
     <crs>EPSG:4326</crs>
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
   <metadata>
-    <entry key="JDBC_VIRTUAL_TABLE">
-      <virtualTable>
-        <name>ch.so.arp.nutzungsplanung.grundnutzung</name>
-        <sql>SELECT &#xd;
-    eigentumsbeschraenkung.t_id AS t_id,&#xd;
-    eigentumsbeschraenkung.aussage_de AS aussage,&#xd;
-    eigentumsbeschraenkung.thema AS thema,&#xd;
-    eigentumsbeschraenkung.subthema AS subthema,&#xd;
-    eigentumsbeschraenkung.artcode AS artcode,&#xd;
-    eigentumsbeschraenkung.rechtsstatus AS rechtsstatus,&#xd;
-    eigentumsbeschraenkung.publiziertab AS publiziertab,&#xd;
-    geometrie.flaeche_lv95&#xd;
-FROM&#xd;
-    live.oerbkrmfr_v1_1transferstruktur_geometrie AS geometrie &#xd;
-    LEFT JOIN live.oerbkrmfr_v1_1transferstruktur_eigentumsbeschraenkung AS eigentumsbeschraenkung&#xd;
-    ON geometrie.eigentumsbeschraenkung = eigentumsbeschraenkung.t_id&#xd;
-WHERE&#xd;
-    eigentumsbeschraenkung.subthema = &apos;Grundnutzung_Zonenflaeche&apos;
-</sql>
-        <escapeSql>false</escapeSql>
-        <geometry>
-          <name>flaeche_lv95</name>
-          <type>Polygon</type>
-          <srid>2056</srid>
-        </geometry>
-      </virtualTable>
-    </entry>
     <entry key="cachingEnabled">false</entry>
   </metadata>
   <store class="dataStore">
