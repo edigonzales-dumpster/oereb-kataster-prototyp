@@ -3,7 +3,7 @@ tls stefan.ziegler.de@gmail.com {
     max_certs 10
 }
 
-proxy /ws / https://web-service:8181 {
+proxy /ws https://web-service:8181 {
     transparent
 } 
 

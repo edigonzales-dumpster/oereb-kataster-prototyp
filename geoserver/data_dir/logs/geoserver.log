@@ -3166,3 +3166,7 @@ Caused by: freemarker.core.InvalidReferenceException: Expression document.offizi
 	at freemarker.template.Template.process(Template.java:237)
 	at org.geoserver.wms.featureinfo.HTMLFeatureInfoOutputFormat.write(HTMLFeatureInfoOutputFormat.java:146)
 	... 103 more
+2019-07-11 18:04:30,600 WARN [gce.imagemosaic] - Unable to set ordering between tiff readers spi
+2019-07-11 18:05:15,915 WARN [geoserver.security] - Failed login, user admin from 172.18.0.1
+2019-07-11 18:11:04,753 WARN [geoserver.security] - Failed login, user admin from 172.18.0.1
+2019-07-11 18:12:26,363 WARN [geoserver.security] - Failed login, user admin from 172.18.0.1
