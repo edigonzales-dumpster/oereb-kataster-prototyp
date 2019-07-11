@@ -6,7 +6,7 @@ tls stefan.ziegler.de@gmail.com {
 proxy / web-service:8081 {
     transparent
 } 
-proxy /geoserver wms:8080 {
+proxy /geoserver https://wms:8080 {
     transparent
 }
 
