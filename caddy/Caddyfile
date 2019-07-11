@@ -17,3 +17,6 @@ proxy /geoserver wms:8080 {
 
 #log /var/log/caddy/status.access.log
 #errors /var/log/caddy/status.error.log
+
+log stdout
+errors stdout
