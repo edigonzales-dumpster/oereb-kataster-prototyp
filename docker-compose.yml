@@ -42,14 +42,13 @@ services:
   wms:
     depends_on:
       - db
-    image: sogis/geoserver:latest
+    image: sogis/oereb-geoserver:latest
     #command: sh -c 'wait-for postgres:5432 -- start.sh'
     command: start.sh
     ports:
       - "8080:8080"
     restart: always
-
-  server:
+  proxy:
     image: abiosoft/caddy
     #container_name: caddy
     environment:

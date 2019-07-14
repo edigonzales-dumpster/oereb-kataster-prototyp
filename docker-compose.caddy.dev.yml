@@ -1,6 +1,6 @@
 version: '3'
 services:
-  server:
+  proxy:
     image: abiosoft/caddy
     restart: always
     ports:

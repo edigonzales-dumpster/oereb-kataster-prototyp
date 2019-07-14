@@ -1,58 +1,54 @@
-# oereb-kataster-prototyp
+# ÖREB-Kataster-Prototyp
+Vorliegendes Projekt zeigt das Zusammenspiel der im Rahmen der Einführung des ÖREB-Katasters im Kanton Solothurn entwickelten Komponenten. Es dient insbesondere dem Testen und dem Präsentieren des jeweiligen Realisierungsstandes der Komponenten und der Sicherstellung, dass das gesamte System reibungslos zusammenspielt. Es ist aber mehr als ein blosser Prototyp oder Showcase, sondern (nach allenfalls notwendigen Anpassungen an den Konfigurationen) voll produktionstauglich. Bereits bei der Konzeption des ÖREB-Katasters im Kanton Solothurn wurde darauf geachtet, dass einfaches Deployment des Gesamtsystems (sowohl Code wie auch Daten) möglich ist. D.h. möglichst ohne Einwirkungen auf die restliche GDI. Eine Ausnahme bildet der Web GIS Client, der nicht Bestandteil dieses Projektes ist.
 
-## OEREB-Kataster
-Starten der Anwendung(en) mit `docker-compose`:
+## Komponenten
+### 
 
-```
-docker-compose up
-```
-Falls nicht vorhanden, wird eine Datenbank angelegt (Pfad von `pgdata` siehe `docker-compose.yml`). Der oereb-web-service, Geoserver (als WMS) und Caddy (als Proxy) werden ebenfalls gestartet. Es werden _keine_ Daten importiert, d.h. die Datenbank ist gegebenenfalls leer. Es wird für jede Anwendung das `latest`-Image von Dockerhub verwendet. Möchte man die Images verändern und/oder neu erstellen, müssen dazu die jeweiligen `docker-compose.[appname].dev.yml` verwendet werden.
 
-Beispiele:
 
-```
-docker-compose -f docker-compose.yml -f docker-compose.geoserver.dev.yml build
-```
-Erstellt das Geoserver-Image neu.
 
-```
-docker-compose -f docker-compose.yml -f docker-compose.geoserver.dev.yml up
-```
-Started sämtliche Container und verwendet für Geoserver die Parameter und Optionen aus dem zusätzlichen `yml`-File.
+
+
+
+
+Einleitung... blablablanig. 
+Skizze mit Komponenten und Zusammenspiel.
+Verwendete Tools/Software. QGIS-Server aber auch Full-Java-Stack (-> GeoServer, JSON, ...). Konfig teilweise eingebrannt.
+
+## Starten des Katasters
+Starten der Anwendung(en) mit `docker-compose up`. Falls nicht vorhanden, wird eine Datenbank angelegt (Pfad von `pgdata` siehe `docker-compose.yml`). Der ÖREB Web Service, Geoserver (als WMS) und Caddy (als Proxy) werden ebenfalls gestartet. Es werden _keine_ Daten importiert, d.h. die Datenbank ist gegebenenfalls leer. 
+
+### Test-Requests
+- ÖREB Web Service:
+  * http://localhost/ws/versions/xml
+  * http://localhost/ws/capabilities/xml
+- ÖREB-Datenbank: `jdbc:postgresql://localhost:54321/oereb`
+- QGIS-Server:
+  * foo
+  * bar
+- GeoServer:
+  * http://localhost/geoserver/web/
+  * http://localhost/geoserver/wms?REQUEST=GetCapabilities&SERVICE=WMS
+
+
+## Organisation und Entwicklung der Anwendungen (Code, Dockerimages und Konfigurationen)
+Die Entwicklung der Anwendungen und/oder der Docker-Images findet in separaten Github-Repositories statt:
+
+- ÖREB Web Service: [Code](https://github.com/claeis/oereb-web-service) / [Dockerimage](https://github.com/sogis/oereb-web-service-docker)
+- ÖREB-Datenbank: [Dockerimage](https://github.com/sogis/oereb-db)
+- QGIS-Server: [Dockerimage](https://github.com/sogis/xxxxxx)
+- GeoServer: [Dockerimage](https://github.com/sogis/yyyyyy)
+
+Ausnahme bildet der Proxyserver (Caddy). Das Dockerfile und die Konfigurationsdateien werden in diesem Github-Respositories gespeichert und weiterentwickelt.
+
+Weiterführende Informationen für den Betrieb (insbesondere welche Umgebungsvariablen gesetzt werden müssen) und zu der Entwicklung finden sich in den einzelnen Repositories.
+
+### Proxyserver (Caddy)
+Als Proxyserver wird [Caddy](https://caddyserver.com/) verwendet. Während der Entwicklung des ÖREB-Katasters (also der `docker-compose.yml`-Datei) ist es zwingend notwendig die Parameter des Proxyservers überschreiben zu können (z.B. Domainname). Dies erfolgt mit einer separaten `Caddyfile.dev`-Datei und einer `docker-compose.caddy.dev.yml`-Datei. Der `docker-compose`-Befehlt lautet wie folgt:
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.caddy.dev.yml up
 ```
-Dito für Caddy.
-
-
-## Applikationen
-### oereb-web-service
-Der Quellcode des ÖREB Web service wird in [Github](https://github.com/claeis/oereb-web-service) verwaltet. Die resultierende Jar-Datei wird in [Bintray](https://dl.bintray.com/claeis/oereb-web-service/ch/ehi/oereb/oereb-web-service/) publiziert. Es handelt sich dabei nicht um eine "Fatjar"-Datei. Der Server (das Fatjar) wird erst beim Erstellen des Docker-Images erzeugt (siehe `build.gradle`). Um das Image auf Dockerhub zu pushen, müssen entsprechende Umgebungsvariablen gesetzt sein (siehe `.travis.yml`).
-
-Für den Betrieb müssen die Umgebungsvariablen `DBURL`, `DBUSR`, `DBPWD` und `DBSCHEMA` gesetzt sein. TODO: Weitere Informationen... Link auf "sub"-README.md oder docs von oereb-web-service.
-
-Testrequests:
-```
-http://localhost:8080/versions/xml
-http://localhost:8080/capabilities/xml
-```
-
-### Datenbank (PostgreSQL)
-foo bar
-TODO:
-- Tabellen/View-Definitionen hinzufügen. Tabellen müssten beim Importprozess nachgeführt werden (resp. materialized views).
-
-### WMS (QGIS-Server)
-foo bar
-
-### WMS (GeoServer)
-foo bar
-
-### Proxy (Caddy)
-foo bar
-TODO:
-- yml für dev etc.
 
 ## Datenimport
 
@@ -62,7 +58,14 @@ TODO:
 
 Der "Fullimport" der amtlichen Vermessung dauert circa 2 bis 3 Stunden. Aus diesem Grund werden nur einige Gemeinden importiert (wo ÖREB-Daten vorhanden sind).
 
-## "User data" für Digitalocean etc.
+## Deployment
+### docker-compose
+fubar
+
+### Docker Swarm
+fubar
+
+## _User data_ für Digitalocean etc.
 ```
 #cloud-config
 users:
@@ -84,7 +87,9 @@ runcmd:
 ```
 
 ## TODO
+- Gretl-Jobs in eigenes Repo!
 - Env-Variablen für DB-Credentials
 - GRETL-Jobs auch in einem Dockercontainer ausführen.
 - Terraform
 - Docker Swarm
+- Doku oereb-web-service: Beispiele für Spring-Konfiguration (Debug-Logging, context path...)
