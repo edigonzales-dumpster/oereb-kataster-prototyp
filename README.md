@@ -1,5 +1,5 @@
 # ÖREB-Kataster-Prototyp
-Vorliegendes Projekt zeigt das Zusammenspiel der im Rahmen der Einführung des ÖREB-Katasters im Kanton Solothurn entwickelten Komponenten. Es dient insbesondere dem Testen und dem Präsentieren des jeweiligen Realisierungsstandes der Komponenten und der Sicherstellung, dass das gesamte System reibungslos zusammenspielt. Es ist aber mehr als ein blosser Prototyp oder Showcase, sondern (nach allenfalls notwendigen Anpassungen an den Konfigurationen) voll produktionstauglich. Bereits bei der Konzeption des ÖREB-Katasters im Kanton Solothurn wurde darauf geachtet, dass einfaches Deployment des Gesamtsystems (sowohl Code wie auch Daten) möglich ist. D.h. möglichst ohne Einwirkungen auf die restliche GDI. Eine Ausnahme bildet der Web GIS Client, der nicht Bestandteil dieses Projektes ist.
+Vorliegendes Projekt zeigt das Zusammenspiel der im Rahmen der Einführung des ÖREB-Katasters im Kanton Solothurn entwickelten Komponenten. Es dient insbesondere dem Testen und dem Präsentieren des jeweiligen Realisierungsstandes der Komponenten und der Sicherstellung, dass das gesamte System reibungslos zusammenspielt. Es ist aber mehr als ein blosser Prototyp oder Showcase, sondern (nach allenfalls notwendigen Anpassungen an den Konfigurationen) voll produktionstauglich. Bereits bei der Konzeption des ÖREB-Katasters im Kanton Solothurn wurde darauf geachtet, dass einfaches Deployment des Gesamtsystems (sowohl Code wie auch Daten) möglich ist. D.h. möglichst ohne Einwirkungen auf die restliche GDI. Eine Ausnahme bildet das Web GIS Client Werkzeug, das nicht Bestandteil dieses Projektes ist, sondern im bestehenden Web GIS Client integriert wird.
 
 ## Komponenten
 ### 
@@ -44,7 +44,7 @@ Ausnahme bildet der Proxyserver (Caddy). Das Dockerfile und die Konfigurationsda
 Weiterführende Informationen für den Betrieb (insbesondere welche Umgebungsvariablen gesetzt werden müssen) und zu der Entwicklung finden sich in den einzelnen Repositories.
 
 ### Proxyserver (Caddy)
-Als Proxyserver wird [Caddy](https://caddyserver.com/) verwendet. Während der Entwicklung des ÖREB-Katasters (also der `docker-compose.yml`-Datei) ist es zwingend notwendig die Parameter des Proxyservers überschreiben zu können (z.B. Domainname). Dies erfolgt mit einer separaten `Caddyfile.dev`-Datei und einer `docker-compose.caddy.dev.yml`-Datei. Der `docker-compose`-Befehlt lautet wie folgt:
+Als Proxyserver wird [Caddy](https://caddyserver.com/) verwendet. Während der Entwicklung des ÖREB-Katasters (also der `docker-compose.yml`-Datei) ist es zwingend notwendig die Parameter des Proxyservers überschreiben zu können (z.B. Domainname). Dies erfolgt mit einer separaten `Caddyfile.dev`-Datei und einer `docker-compose.caddy.dev.yml`-Datei. Der `docker-compose`-Befehl lautet wie folgt:
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.caddy.dev.yml up
