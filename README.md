@@ -1,15 +1,17 @@
 # ÖREB-Kataster-Prototyp
-Vorliegendes Projekt zeigt das Zusammenspiel der im Rahmen der Einführung des ÖREB-Katasters im Kanton Solothurn entwickelten Komponenten. Es dient insbesondere dem Testen und dem Präsentieren des jeweiligen Realisierungsstandes der Komponenten und der Sicherstellung, dass das gesamte System reibungslos zusammenspielt. Es ist aber mehr als ein blosser Prototyp oder Showcase, sondern (nach allenfalls notwendigen Anpassungen an den Konfigurationen) voll produktionstauglich. Bereits bei der Konzeption des ÖREB-Katasters im Kanton Solothurn wurde darauf geachtet, dass einfaches Deployment des Gesamtsystems (sowohl Code wie auch Daten) möglich ist. D.h. möglichst ohne Einwirkungen auf die restliche GDI. Eine Ausnahme bildet das Web GIS Client Werkzeug, das nicht Bestandteil dieses Projektes ist, sondern im bestehenden Web GIS Client integriert wird.
+Vorliegendes Projekt zeigt das Zusammenspiel der im Rahmen der Einführung des ÖREB-Katasters im Kanton Solothurn entwickelten Komponenten. Es dient insbesondere dem Testen und dem Präsentieren des jeweiligen Realisierungsstandes der Komponenten und der Sicherstellung, dass das gesamte System reibungslos zusammenspielt. Es ist aber mehr als ein blosser Prototyp oder Showcase, sondern (nach allenfalls notwendigen Anpassungen an den Konfigurationen) auch produktionstauglich. Bereits bei der Konzeption des ÖREB-Katasters im Kanton Solothurn wurde darauf geachtet, dass einfaches Deployment des Gesamtsystems (sowohl Code wie auch Daten) möglich ist. D.h. möglichst ohne Einwirkungen auf die restliche GDI. Eine Ausnahme bildet das Web GIS Client Werkzeug, das nicht Bestandteil dieses Projektes ist, sondern im bestehenden Web GIS Client integriert wird. Der ÖREB-Kataster wird konzeptionell als Anwendung betrachtet und weniger als Sammelsurium von Komponenten, die in die bestehende GDI gezwängt werden.
+
+Um sowohl die einzelnen Komponenten wie auch die Prozesse und Schnittstellen möglichst einfach, schlank und transparent zu halten, wird konsequent mit INTERLIS und entsprechenden Schnittstellenwerkzeugen (ili2pg, ilivalidator) gearbeitet. Das bedeutet z.B., dass die Daten in der Transferstruktur (des ÖREB-Rahmenmodells) ausgetauscht werden müssen und die Tabellen in der ÖREB-Datenbank mit ili2pg angelegt werden müssen ("opinionated").
 
 ## Komponenten
-### 
+### ÖREB-Webservice
+Webservice gemäss [Weisung V+D](https://www.cadastre.ch/content/cadastre-internet/de/manual-oereb/publication/instruction.download/cadastre-internet/de/documents/oereb-weisungen/OEREB-XML-Aufruf_de.pdf). [Code](https://github.com/claeis/oereb-web-service) und [Dockerimage](https://github.com/sogis/oereb-web-service-docker) werden in getrennten Github-Repositories entwickelt. 
 
+### ÖREB-Datenbank
+Datenbank zur Speicherung der ÖREB-Daten und weiterer notwendiger Daten. Dazu gehört er amtlichen Vermessung und den PLZ/Ortschaften ein sogenanntes Annex-Modell. Das Annex-Modell beinhaltet Informationen, die für den statischen Auszug notwendig sind (Gemeindelogos, Informationen über vorhandene Daten, ...). 
 
-
-
-
-
-
+### QGIS-Server
+Dient als WMS-Server für die ÖREB-Daten. Bedient sich von Views (oder materialisierten Views) aus der ÖREB-Datenbank. 
 
 Einleitung... blablablanig. 
 Skizze mit Komponenten und Zusammenspiel.
