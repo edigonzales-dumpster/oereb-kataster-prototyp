@@ -20,8 +20,8 @@ services:
     ports:
       - "54321:5432"
     volumes:
-      #- ~/oereb-pgdata:/pgdata:delegated
-      - /tmp:/pgdata:delegated
+      - ~/oereb-pgdata:/pgdata:delegated
+      #- /tmp:/pgdata:delegated
     restart: always
   web-service:
     depends_on:
