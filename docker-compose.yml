@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db:ziegler
+    image: sogis/oereb-db:latest
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
@@ -39,7 +39,7 @@ services:
     ports:
       - "8181:8181"
     restart: always
-  wms:
+  geoserver:
     depends_on:
       - db
     image: sogis/oereb-geoserver:latest

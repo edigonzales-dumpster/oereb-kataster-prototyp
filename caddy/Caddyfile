@@ -7,17 +7,17 @@ proxy /ws https://web-service:8181 {
     transparent
 } 
 
-proxy /geoserver https://wms:8080 {
+proxy /geoserver https://geoserver:8080 {
     transparent
 }
 
 # proxy url in geoserver setzen
 # Was ist mit dem GUI?
-#proxy /wms wms:8080/geoserver/wms 
-#proxy /ows wms:8080/geoserver/ows 
+#proxy /wms geoserver:8080/geoserver/wms 
+#proxy /ows geoserver:8080/geoserver/ows 
 
 #log /var/log/caddy/status.access.log
 #errors /var/log/caddy/status.error.log
 
-log stdout
-errors stdout
+#log stdout
+#errors stdout
