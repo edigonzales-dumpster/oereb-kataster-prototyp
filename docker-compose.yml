@@ -48,15 +48,15 @@ services:
     ports:
       - "8080:8080"
     restart: always
-  proxy:
-    image: abiosoft/caddy
-    #container_name: caddy
-    environment:
-      ACME_AGREE: "true"
-    restart: always
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      #- "~/.caddy:/root/.caddy"
-      - "./caddy/Caddyfile:/etc/Caddyfile"
+  # proxy:
+  #   image: abiosoft/caddy
+  #   #container_name: caddy
+  #   environment:
+  #     ACME_AGREE: "true"
+  #   restart: always
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     #- "~/.caddy:/root/.caddy"
+  #     - "./caddy/Caddyfile:/etc/Caddyfile"
