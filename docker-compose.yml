@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db:32
+    image: sogis/oereb-db:latest
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
