@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db:latest
+    image: sogis/oereb-db:34
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
@@ -43,7 +43,7 @@ services:
   geoserver:
     depends_on:
       - db
-    image: sogis/oereb-geoserver:latest
+    image: sogis/oereb-geoserver:1
     #command: sh -c 'wait-for postgres:5432 -- start.sh'
     command: start.sh
     ports:
