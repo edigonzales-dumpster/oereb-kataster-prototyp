@@ -3,11 +3,11 @@ tls stefan.ziegler.de@gmail.com {
     max_certs 100
 }
 
-proxy /ws https://web-service:8181 {
+proxy /ws web-service:8181 {
     transparent
 } 
 
-proxy /geoserver https://geoserver:8080 {
+proxy /geoserver geoserver:8080 {
     transparent
 }
 
@@ -19,5 +19,5 @@ proxy /geoserver https://geoserver:8080 {
 #log /var/log/caddy/status.access.log
 #errors /var/log/caddy/status.error.log
 
-log stdout
-errors stdout
+#log stdout
+#errors stdout
