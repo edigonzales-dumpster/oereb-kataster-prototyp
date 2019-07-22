@@ -20,7 +20,8 @@ services:
     ports:
       - "54321:5432"
     volumes:
-      - oereb_data_db:/pgdata
+      - /private/oereb_db_prod:/pgdata:delegated
+      #- oereb_data_db:/pgdata
       #- "${PWD}/oereb-pgdata:/pgdata:delegated"
       #- /tmp:/pgdata:delegated
     restart: always
@@ -61,6 +62,3 @@ services:
   #   volumes:
   #     #- "~/.caddy:/root/.caddy"
   #     - "./caddy/Caddyfile:/etc/Caddyfile"
-volumes: 
-  oereb_data_db:
-    external: true

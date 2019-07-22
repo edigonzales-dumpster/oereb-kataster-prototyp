@@ -82,14 +82,13 @@ runcmd:
  - add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
  - apt-get install --yes adoptopenjdk-8-hotspot
  - usermod -aG docker oerebuser 
- #- mkdir --mode=0777 -p /home/oerebuser/oereb-pgdata
- #- chown -R oerebuser:oerebuser /home/oerebuser/oereb-pgdata
+ - mkdir --mode=0777 -p /private/oereb_db_prod
+ #- chown -R oerebuser:oerebuser /private/oereb_db_prod
  #- git clone https://github.com/edigonzales/oereb-kataster-prototyp.git /home/oerebuser/oereb-kataster-prototyp
  #- chown -R oerebuser:oerebuser /home/oerebuser/oereb-kataster-prototyp
  - docker swarm init --advertise-addr $(hostname -I | awk '{print $1}')
  - curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
  - docker stack deploy --compose-file=portainer-agent-stack.yml portainer 
- - docker volume create --name=oereb_data_db
 ```
 
 ## TODO

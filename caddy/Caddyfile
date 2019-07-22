@@ -1,4 +1,4 @@
-sogeo.services 
+oereb.sogeo.services 
 tls stefan.ziegler.de@gmail.com {
     max_certs 10
 }
@@ -19,5 +19,5 @@ proxy /geoserver https://geoserver:8080 {
 #log /var/log/caddy/status.access.log
 #errors /var/log/caddy/status.error.log
 
-#log stdout
-#errors stdout
+log stdout
+errors stdout
