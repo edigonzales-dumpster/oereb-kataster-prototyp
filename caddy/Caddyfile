@@ -1,6 +1,6 @@
-oereb.sogeo.services 
+oereb.catais.org 
 tls stefan.ziegler.de@gmail.com {
-    max_certs 10
+    max_certs 100
 }
 
 proxy /ws https://web-service:8181 {

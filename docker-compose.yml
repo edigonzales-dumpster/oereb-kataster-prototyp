@@ -60,6 +60,6 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      #- "~/.caddy:/root/.caddy"
+      - "/private/caddy_prod/.caddy:/root/.caddy"
       #- "./caddy/Caddyfile:/etc/Caddyfile"
       - "/private/caddy_prod/Caddyfile:/etc/Caddyfile"

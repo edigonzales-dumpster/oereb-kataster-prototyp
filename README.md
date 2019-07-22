@@ -89,9 +89,9 @@ runcmd:
  - git clone https://github.com/edigonzales/oereb-kataster-prototyp.git /home/oerebuser/oereb-kataster-prototyp
  - chown -R oerebuser:oerebuser /home/oerebuser/oereb-kataster-prototyp
  #- docker swarm init --advertise-addr $(hostname -I | awk '{print $1}')
- - docker swarm init --advertise-addr 67.207.73.98
- - curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
- - docker stack deploy --compose-file=portainer-agent-stack.yml portainer 
+ #- docker swarm init --advertise-addr 67.207.73.98
+ #- curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
+ #- docker stack deploy --compose-file=portainer-agent-stack.yml portainer 
 ```
 
 ## TODO
