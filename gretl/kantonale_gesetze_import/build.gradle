@@ -10,7 +10,7 @@ def GROUP = "Kantonale-Gesetze-Import"
 task download(type: Download) {
     group = GROUP
     description = "Download kantonale Gesetze."
-    src "https://s3.eu-central-1.amazonaws.com/ch.so.sk.gesetze/" + fileName
+    src "https://geo.so.ch/geodata/ch.so.sk.gesetze.oereb/" + fileName
     dest pathToTempFolder
     overwrite true
 

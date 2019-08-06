@@ -38,7 +38,6 @@ landUsePlanningDataSets.each { landUsePlanningDataSet ->
     }
 }
 
-
 task replaceLandUsePlanningData() {
     group = GROUP
     description = "Aggregationstask für das Importieren/Ersetzen sämtlicher AV-Daten."

@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db:34
+    image: sogis/oereb-db:37
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
@@ -58,7 +58,7 @@ services:
       SERVER_SERVLET_CONTEXT_PATH: /client
       SERVER_PORT: 8282
     ports:
-      - "8280:8282"
+      - "8282:8282"
     restart: always    
   proxy:
     image: abiosoft/caddy
