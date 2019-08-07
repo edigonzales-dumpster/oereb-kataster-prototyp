@@ -7,7 +7,7 @@ buildscript {
         mavenCentral()
     }
         dependencies {
-            classpath "ch.so.agi:gretl:2.0.103"
+            classpath "ch.so.agi:gretl:2.0.122"
             classpath "de.undercouch:gradle-download-task:4.0.0"
     }
 }
@@ -24,8 +24,11 @@ allprojects {
 
         iliModelAmtlicheVermessung = "DM01AVCH24LV95D"
         iliModelPLZOrtschaft = "PLZOCH1LV95D"
+        iliModelOereb = "OeREBKRM_V1_1"
         iliModelVorschriften = "OeREBKRMvs_V1_1"
         iliModelTransferstruktur = "OeREBKRMtrsfr_V1_1"
+        iliModelAnnex = "OeREB_ExtractAnnex_V1_0"
+        iliModelGrundbuchKreise = "SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822"
     }
 }
 

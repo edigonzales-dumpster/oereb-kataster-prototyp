@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db:37
+    image: sogis/oereb-db:40
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
@@ -21,9 +21,6 @@ services:
       - "54321:5432"
     volumes:
       - /private/oereb_db_prod:/pgdata:delegated
-      #- oereb_data_db:/pgdata
-      #- "${PWD}/oereb-pgdata:/pgdata:delegated"
-      #- /tmp:/pgdata:delegated
     restart: always
   web-service:
     depends_on:
@@ -34,6 +31,7 @@ services:
       DBURL: jdbc:postgresql://db:5432/oereb
       DBUSR: admin
       DBPWD: admin
+      TMPDIR: /tmp
       DBSCHEMA: live
       SERVER_SERVLET_CONTEXT_PATH: /ws
       SERVER_PORT: 8181
@@ -41,35 +39,35 @@ services:
     ports:
       - "8181:8181"
     restart: always
-  geoserver:
-    depends_on:
-      - db
-    image: sogis/oereb-geoserver:1
-    #command: sh -c 'wait-for postgres:5432 -- start.sh'
-    command: start.sh
-    ports:
-      - "8080:8080"
-    restart: always
-  client:
-    depends_on:
-      - web-service
-    image: sogis/oereb-client:latest
-    environment:
-      SERVER_SERVLET_CONTEXT_PATH: /client
-      SERVER_PORT: 8282
-    ports:
-      - "8282:8282"
-    restart: always    
-  proxy:
-    image: abiosoft/caddy
-    #container_name: caddy
-    environment:
-      ACME_AGREE: "true"
-    restart: always
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - "/private/caddy_prod/.caddy:/root/.caddy"
-      #- "./caddy/Caddyfile:/etc/Caddyfile"
-      - "/private/caddy_prod/Caddyfile:/etc/Caddyfile"
+  # geoserver:
+  #   depends_on:
+  #     - db
+  #   image: sogis/oereb-geoserver:1
+  #   #command: sh -c 'wait-for postgres:5432 -- start.sh'
+  #   command: start.sh
+  #   ports:
+  #     - "8080:8080"
+  #   restart: always
+  # client:
+  #   depends_on:
+  #     - web-service
+  #   image: sogis/oereb-client:latest
+  #   environment:
+  #     SERVER_SERVLET_CONTEXT_PATH: /client
+  #     SERVER_PORT: 8282
+  #   ports:
+  #     - "8282:8282"
+  #   restart: always    
+  # proxy:
+  #   image: abiosoft/caddy
+  #   #container_name: caddy
+  #   environment:
+  #     ACME_AGREE: "true"
+  #   restart: always
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - "/private/caddy_prod/.caddy:/root/.caddy"
+  #     #- "./caddy/Caddyfile:/etc/Caddyfile"
+  #     - "/private/caddy_prod/Caddyfile:/etc/Caddyfile"

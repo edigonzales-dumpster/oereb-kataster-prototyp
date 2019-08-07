@@ -5,13 +5,13 @@ proxy /ws web-service:8181 {
     transparent
 }
 
-proxy /geoserver geoserver:8080 {
-    transparent
-}
+#proxy /geoserver geoserver:8080 {
+#    transparent
+#}
 
-proxy /client client:8282 {
-    transparent
-}
+#proxy /client client:8282 {
+#    transparent
+#}
 
 # proxy url in geoserver setzen
 # Was ist mit dem GUI?
