@@ -33,18 +33,17 @@ Test-Requests:
 
 - http://localhost:8181/ws/getegrid/xml/?XY=2634186,1248332 
 - http://localhost:8181/ws/getegrid/xml/?XY=2600645,1215449 
-- http://localhost:8181/ws/extract/reduced/xml/geometry/CH693289470668
+- http://localhost:8181/ws/extract/reduced/xml/geometry/CH368132060914
 - http://localhost:8181/ws/extract/reduced/xml/geometry/CH310601327458
+- http://localhost:8181/ws/extract/reduced/xml/geometry/CH789332067505
 
-
-
-* CH693289470668 (Wisen) 2634186 1248332
+* CH368132060914 (Wisen)  
 * CH310601327458 (Messen) 2600645 1215449
 
 ## Datenimport
 
 ```
-./gradlew av_import:replaceCadastralSurveyingData plz_import:dbImport gb_kreise_import:dbImport bundescodeliste_import:dbImport bundesgesetze_import:dbImport bundesdaten_import:replaceFederalData kantonale_gesetze_import:dbImport npl_import:replaceLandUsePlanningData annex_import:replaceAnnexData (npl_import:refreshMaterializedViews)
+./gradlew av_import:replaceCadastralSurveyingData plz_import:dbImport gb_kreise_import:dbImport bundescodeliste_import:dbImport bundesgesetze_import:dbImport bundesdaten_import:replaceFederalData kantonale_gesetze_import:dbImport npl_import:replaceLandUsePlanningData annex_import:replaceAnnexData (npl_import:refreshMaterializedViews) 
 ```
 
 Der "Fullimport" der amtlichen Vermessung dauert circa 2 bis 3 Stunden. Aus diesem Grund werden nur einige Gemeinden importiert (wo ÖREB-Daten vorhanden sind).
