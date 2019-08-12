@@ -3,7 +3,7 @@ import java.nio.file.Paths
 import de.undercouch.gradle.tasks.download.Download
 
 def pathToTempFolder = System.getProperty("java.io.tmpdir")
-def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.grundnutzung.oereb"]
+def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.oereb"]
 def landUsePlanningBaseUrl = "https://s3.eu-central-1.amazonaws.com/ch.so.arp.nutzungsplanung.oereb-dev/"
 
 def GROUP = "Nutzungsplanung-Import"
