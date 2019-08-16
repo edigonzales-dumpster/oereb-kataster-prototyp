@@ -51,6 +51,6 @@ replaceLandUsePlanningData.dependsOn {
 task refreshMaterializedViews(type: SqlExecutor) {
     group = GROUP
     description = "Rechnet sämtliche materialisierten Views neu."
-    database = [dbUriOereb, dbUserOereb, dbPwdOereb]
+    database = [dbUriOereb, "admin", "admin"]
     sqlFiles = ["refresh_materialized_views.sql"]
 } 
