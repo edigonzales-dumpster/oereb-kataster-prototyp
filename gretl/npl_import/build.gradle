@@ -4,8 +4,8 @@ import de.undercouch.gradle.tasks.download.Download
 
 def pathToTempFolder = System.getProperty("java.io.tmpdir")
 //def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.oereb"]
-//def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.oereb.2502"]
-def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.oereb.2408"]
+def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.oereb.2502"]
+//def landUsePlanningDataSets = ["ch.so.arp.nutzungsplanung.oereb.2408"]
 def landUsePlanningBaseUrl = "https://s3.eu-central-1.amazonaws.com/ch.so.arp.nutzungsplanung.oereb-dev/"
 
 def GROUP = "Nutzungsplanung-Import"
