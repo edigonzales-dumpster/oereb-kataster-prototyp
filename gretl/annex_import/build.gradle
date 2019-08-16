@@ -10,7 +10,7 @@ def annexDataSets = [
         "ch.so.agi.OeREB_extractAnnex-AktiveGemeinden"
     ]
 
-def annexBaseUrl = "https://dl.bintray.com/sogis/ch.so.agi.oereb-data/"
+def annexBaseUrl = "https://s3.eu-central-1.amazonaws.com/ch.so.agi.oereb-extract-annex/"
 
 def GROUP = "Annexdaten-Import"
 

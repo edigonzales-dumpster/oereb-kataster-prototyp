@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db:40
+    image: sogis/oereb-db:45
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
@@ -22,23 +22,23 @@ services:
     volumes:
       - /private/oereb_db_prod:/pgdata:delegated
     restart: always
-  web-service:
-    depends_on:
-      - db
-    hostname: web-service
-    image: sogis/oereb-web-service:latest
-    environment:
-      DBURL: jdbc:postgresql://db:5432/oereb
-      DBUSR: admin
-      DBPWD: admin
-      TMPDIR: /tmp
-      DBSCHEMA: live
-      SERVER_SERVLET_CONTEXT_PATH: /ws
-      SERVER_PORT: 8181
-      #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
-    ports:
-      - "8181:8181"
-    restart: always
+  # web-service:
+  #   depends_on:
+  #     - db
+  #   hostname: web-service
+  #   image: sogis/oereb-web-service:latest
+  #   environment:
+  #     DBURL: jdbc:postgresql://db:5432/oereb
+  #     DBUSR: admin
+  #     DBPWD: admin
+  #     TMPDIR: /tmp
+  #     DBSCHEMA: live
+  #     SERVER_SERVLET_CONTEXT_PATH: /ws
+  #     SERVER_PORT: 8181
+  #     #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
+  #   ports:
+  #     - "8181:8181"
+  #   restart: always
   # geoserver:
   #   depends_on:
   #     - db
