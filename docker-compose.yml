@@ -22,23 +22,35 @@ services:
     volumes:
       - /private/oereb_db_prod:/pgdata:delegated
     restart: always
-  # web-service:
-  #   depends_on:
-  #     - db
-  #   hostname: web-service
-  #   image: sogis/oereb-web-service:latest
-  #   environment:
-  #     DBURL: jdbc:postgresql://db:5432/oereb
-  #     DBUSR: admin
-  #     DBPWD: admin
-  #     TMPDIR: /tmp
-  #     DBSCHEMA: live
-  #     SERVER_SERVLET_CONTEXT_PATH: /ws
-  #     SERVER_PORT: 8181
-  #     #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
-  #   ports:
-  #     - "8181:8181"
-  #   restart: always
+  wms:
+    image: sogis/oereb-wms:latest
+    environment:
+      QGIS_SERVER_PARALLEL_RENDERING: "true"
+      QGIS_SERVER_MAX_THREADS: 2
+      QGIS_FCGI_MAX_PROCESSES: 2
+      QGIS_FCGI_MIN_PROCESSES: 2
+      QGIS_SERVER_LOG_LEVEL: 0
+    ports:
+      - 8083:80
+    depends_on:
+      - db
+  web-service:
+    hostname: web-service
+    image: sogis/oereb-web-service:latest
+    environment:
+      DBURL: jdbc:postgresql://db:5432/oereb
+      DBUSR: admin
+      DBPWD: admin
+      TMPDIR: /home/oereb-web-service
+      DBSCHEMA: live
+      SERVER_SERVLET_CONTEXT_PATH: /ws
+      SERVER_PORT: 8181
+      #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
+    ports:
+      - "8181:8181"
+    depends_on:
+      - db
+    restart: always
   # geoserver:
   #   depends_on:
   #     - db

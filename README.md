@@ -39,16 +39,19 @@ Test-Requests:
 
 * CH368132060914 (Wisen)  
 * CH310601327458 (Messen) 2600645 1215449
+* CH540632893416 (Wisen)
+
+- http://localhost:8181/ws/extract/reduced/xml/geometry/CH540632893416
+
+
+
+- http://localhost:8083/wms/oereb?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung
+- http://localhost:8083/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities
 
 ## Datenimport
 
 ```
-./gradlew av_import:replaceCadastralSurveyingData plz_import:dbImport gb_kreise_import:dbImport bundescodeliste_import:dbImport bundesgesetze_import:dbImport bundesdaten_import:replaceFederalData kantonale_gesetze_import:dbImport npl_import:replaceLandUsePlanningData annex_import:replaceAnnexData npl_import:refreshMaterializedViews
-```
-
-tmp:
-```
-./gradlew bundesgesetze_import:dbImport kantonale_gesetze_import:dbImport npl_import:replaceLandUsePlanningData npl_import:refreshMaterializedViews
+./gradlew av_import:replaceCadastralSurveyingData plz_import:dbImport gb_kreise_import:dbImport bundescodeliste_import:dbImport bundesgesetze_import:dbImport bundesdaten_import:replaceFederalData kantonale_gesetze_import:dbImport annex_import:replaceAnnexData npl_import:replaceLandUsePlanningData npl_import:refreshMaterializedViews
 ```
 
 Der "Fullimport" der amtlichen Vermessung dauert circa 2 bis 3 Stunden. Aus diesem Grund werden nur einige Gemeinden importiert (wo ÖREB-Daten vorhanden sind).
