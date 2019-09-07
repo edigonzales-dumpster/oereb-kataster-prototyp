@@ -34,23 +34,23 @@ services:
       - 8083:80
     depends_on:
       - db
-  # web-service:
-  #   hostname: web-service
-  #   image: sogis/oereb-web-service:latest
-  #   environment:
-  #     DBURL: jdbc:postgresql://db:5432/oereb
-  #     DBUSR: admin
-  #     DBPWD: admin
-  #     TMPDIR: /home/oereb-web-service
-  #     DBSCHEMA: live
-  #     SERVER_SERVLET_CONTEXT_PATH: /ws
-  #     SERVER_PORT: 8181
-  #     #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
-  #   ports:
-  #     - "8181:8181"
-  #   depends_on:
-  #     - db
-  #   restart: always
+  web-service:
+    hostname: web-service
+    image: sogis/oereb-web-service:latest
+    environment:
+      DBURL: jdbc:postgresql://db:5432/oereb
+      DBUSR: admin
+      DBPWD: admin
+      TMPDIR: /home/oereb-web-service
+      DBSCHEMA: live
+      SERVER_SERVLET_CONTEXT_PATH: /ws
+      SERVER_PORT: 8181
+      #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
+    ports:
+      - "8181:8181"
+    depends_on:
+      - db
+    restart: always
   # geoserver:
   #   depends_on:
   #     - db
