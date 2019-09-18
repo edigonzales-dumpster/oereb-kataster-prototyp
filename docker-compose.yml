@@ -36,7 +36,7 @@ services:
       - db
   web-service:
     hostname: web-service
-    image: sogis/oereb-web-service:25
+    image: sogis/oereb-web-service:latest
     environment:
       DBURL: jdbc:postgresql://db:5432/oereb
       DBUSR: admin
