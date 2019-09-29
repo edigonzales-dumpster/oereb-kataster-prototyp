@@ -1,0 +1,27 @@
+oereb.catais.org 
+tls stefan.ziegler.de@gmail.com {
+    max_certs 100
+}
+
+proxy /ws web-service:8181 {
+    transparent
+} 
+
+proxy /geoserver geoserver:8080 {
+    transparent
+}
+
+proxy /client client:8282 {
+    transparent
+}
+
+# proxy url in geoserver setzen
+# Was ist mit dem GUI?
+#proxy /wms geoserver:8080/geoserver/wms 
+#proxy /ows geoserver:8080/geoserver/ows 
+
+#log /var/log/caddy/status.access.log
+#errors /var/log/caddy/status.error.log
+
+#log stdout
+#errors stdout

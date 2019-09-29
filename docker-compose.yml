@@ -34,23 +34,25 @@ services:
       - 8083:80
     depends_on:
       - db
-  web-service:
-    hostname: web-service
-    image: sogis/oereb-web-service:latest
-    environment:
-      DBURL: jdbc:postgresql://db:5432/oereb
-      DBUSR: admin
-      DBPWD: admin
-      TMPDIR: /home/oereb-web-service
-      DBSCHEMA: live
-      SERVER_SERVLET_CONTEXT_PATH: /ws
-      SERVER_PORT: 8181
-      #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
-    ports:
-      - "8181:8181"
-    depends_on:
-      - db
-    restart: always
+  # web-service:
+  #   hostname: web-service
+  #   #image: sogis/oereb-web-service:25
+  #   image: sogis/oereb-web-service:latest
+  #   environment:
+  #     TZ: Europe/Zurich
+  #     DBURL: jdbc:postgresql://db:5432/oereb
+  #     DBUSR: admin
+  #     DBPWD: admin
+  #     TMPDIR: /home/oereb-web-service
+  #     DBSCHEMA: live
+  #     #SERVER_SERVLET_CONTEXT_PATH: /ws
+  #     SERVER_PORT: 8181
+  #     #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
+  #   ports:
+  #     - "8181:8181"
+  #   depends_on:
+  #     - db
+  #   restart: always
   # geoserver:
   #   depends_on:
   #     - db
@@ -65,21 +67,20 @@ services:
   #     - web-service
   #   image: sogis/oereb-client:latest
   #   environment:
-  #     SERVER_SERVLET_CONTEXT_PATH: /client
   #     SERVER_PORT: 8282
   #   ports:
   #     - "8282:8282"
   #   restart: always    
-  # proxy:
-  #   image: abiosoft/caddy
-  #   #container_name: caddy
-  #   environment:
-  #     ACME_AGREE: "true"
-  #   restart: always
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   volumes:
-  #     - "/private/caddy_prod/.caddy:/root/.caddy"
-  #     #- "./caddy/Caddyfile:/etc/Caddyfile"
-  #     - "/private/caddy_prod/Caddyfile:/etc/Caddyfile"
+  proxy:
+    image: abiosoft/caddy:latest
+    #container_name: caddy
+    environment:
+      ACME_AGREE: "true"
+    restart: always
+    ports:
+      - "80:80"
+      #- "443:443"
+    volumes:
+      - "/private/caddy_prod/.caddy:/root/.caddy"
+      #- "./caddy/Caddyfile:/etc/Caddyfile"
+      - "/private/caddy_prod/Caddyfile:/etc/Caddyfile"
