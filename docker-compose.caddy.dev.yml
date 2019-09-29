@@ -1,9 +1,0 @@
-version: '3'
-services:
-  proxy:
-    image: abiosoft/caddy:latest
-    restart: always
-    ports:
-      - "80:80"
-    volumes:
-      - "./caddy/Caddyfile.dev:/etc/Caddyfile"

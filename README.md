@@ -17,12 +17,13 @@ Um das Testen noch einfacher zu machen, wurde auf Basis des `oereb-db`-Images ei
 Dient als WMS-Server für die ÖREB-Daten. Bedient sich von Views (oder materialisierten Views) aus der ÖREB-Datenbank. Dockerfile und Konfigurationsdateien (QGS-, QML-Dateien) sind [hier](https://github.com/sogis/oereb-wms) zu finden.
 
 ### Proxyserver (Caddy)
-Keine offizielle Komponente des ÖREB-Katasters des Kanton Solothurn. 
+Keine offizielle Komponente des ÖREB-Katasters des Kanton Solothurn.
 
-Als Proxyserver wird [Caddy](https://caddyserver.com/) verwendet. Während der Entwicklung des ÖREB-Katasters (also der `docker-compose.yml`-Datei) ist es zwingend notwendig die Parameter des Proxyservers überschreiben zu können (z.B. Domainname). Dies erfolgt mit einer separaten `Caddyfile.dev`-Datei und einer `docker-compose.caddy.dev.yml`-Datei. Der `docker-compose`-Befehl lautet wie folgt:
+## Development
+Während der Entwicklung des ÖREB-Katasters ist es zwingend notwendig die Parameter verschiedener Komponenten überschreiben zu können (z.B. Domainname, URL von Services). Dies erfolgt mit einer separaten `docker-compose.dev.yml`-Datei. Der `docker-compose`-Befehl lautet wie folgt:
 
 ```
-docker-compose -f docker-compose.yml -f docker-compose.caddy.dev.yml up
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
 ```
 
 ## Starten des Katasters

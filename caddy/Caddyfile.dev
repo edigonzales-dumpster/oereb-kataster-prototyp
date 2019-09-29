@@ -11,21 +11,12 @@ proxy /ws web-service:8181 {
     without /ws
 }
 
-#proxy /geoserver geoserver:8080 {
-#    transparent
-#}
-
 proxy /client/ client:8282 {
     #transparent
     without /client
 }
 
 redir /client /client/
-
-# proxy url in geoserver setzen
-# Was ist mit dem GUI?
-#proxy /wms geoserver:8080/geoserver/wms 
-#proxy /ows geoserver:8080/geoserver/ows 
 
 log stdout
 errors stdout
