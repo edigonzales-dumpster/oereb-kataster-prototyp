@@ -1,22 +1,21 @@
-oereb.catais.org 
-tls stefan.ziegler.de@gmail.com 
+http://oereb.catais.org
+tls stefan.ziegler.de@gmail.com
 
 proxy /ws web-service:8181 {
-    #transparent
     header_upstream +X-Forwarded-Prexix ws
     header_upstream Host {host}
     header_upstream X-Real-IP {remote}
     header_upstream +X-Forwarded-For {remote}
     header_upstream X-Forwarded-Proto {scheme}
     without /ws
-} 
+}
 
-#proxy /geoserver geoserver:8080 {
-#    transparent
-#}
+proxy /wms/oereb wms:80/wms/oereb {
+   transparent
+   without /wms/oereb
+}
 
-proxy /client client:8282 {
-    transparent
+proxy / client:8282 {
 }
 
 redir /client /client/

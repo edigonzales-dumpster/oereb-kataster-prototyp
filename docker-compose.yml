@@ -74,13 +74,14 @@ services:
   proxy:
     image: abiosoft/caddy:latest
     #container_name: caddy
-    environment:
-      ACME_AGREE: "true"
+    #environment:
+    #  ACME_AGREE: "true"
     restart: always
     ports:
       - "80:80"
       #- "443:443"
     volumes:
-      - "/private/caddy_prod/.caddy:/root/.caddy"
+      #- "/private/caddy_prod/.caddy:/root/.caddy"
       #- "./caddy/Caddyfile:/etc/Caddyfile"
-      - "/private/caddy_prod/Caddyfile:/etc/Caddyfile"
+      #- "/private/caddy_prod/Caddyfile:/etc/Caddyfile"
+      "./caddy/Caddyfile:/etc/Caddyfile"
