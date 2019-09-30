@@ -1,79 +1,67 @@
 version: '3'
 services:
-  # db:
-  #   hostname: primary
-  #   image: sogis/oereb-db-data:full
-  #   environment:
-  #     PG_DATABASE: oereb
-  #     PG_LOCALE: de_CH.UTF-8
-  #     PG_PRIMARY_PORT: 5432
-  #     PG_MODE: primary
-  #     PG_USER: admin
-  #     PG_PASSWORD: admin
-  #     PG_PRIMARY_USER: repl
-  #     PG_PRIMARY_PASSWORD: repl
-  #     PG_ROOT_PASSWORD: secret
-  #     PG_WRITE_USER: gretl
-  #     PG_WRITE_PASSWORD: gretl
-  #     PG_READ_USER: ogc_server
-  #     PG_READ_PASSWORD: ogc_server
-  #   ports:
-  #     - "54321:5432"
-  #   #volumes:
-  #   #  - /private/oereb_db_prod:/pgdata:delegated
-  #   restart: always
-  # wms:
-  #   image: sogis/oereb-wms:latest
-  #   environment:
-  #     QGIS_SERVER_PARALLEL_RENDERING: "true"
-  #     QGIS_SERVER_MAX_THREADS: 2
-  #     QGIS_FCGI_MAX_PROCESSES: 2
-  #     QGIS_FCGI_MIN_PROCESSES: 2
-  #     QGIS_SERVER_LOG_LEVEL: 0
-  #   ports:
-  #     - 8083:80
-  #   depends_on:
-  #     - db
-  # web-service:
-  #   hostname: web-service
-  #   #image: sogis/oereb-web-service:25
-  #   image: sogis/oereb-web-service:latest
-  #   environment:
-  #     TZ: Europe/Zurich
-  #     DBURL: jdbc:postgresql://db:5432/oereb
-  #     DBUSR: admin
-  #     DBPWD: admin
-  #     TMPDIR: /home/oereb-web-service
-  #     DBSCHEMA: live
-  #     #SERVER_SERVLET_CONTEXT_PATH: /ws
-  #     SERVER_PORT: 8181
-  #     #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
-  #   ports:
-  #     - "8181:8181"
-  #   depends_on:
-  #     - db
-  #   restart: always
-  # geoserver:
-  #   depends_on:
-  #     - db
-  #   image: sogis/oereb-geoserver:1
-  #   #command: sh -c 'wait-for postgres:5432 -- start.sh'
-  #   command: start.sh
-  #   ports:
-  #     - "8080:8080"
-  #   restart: always
-  client:
-    #depends_on:
-    #  - web-service
-    image: sogis/oereb-client:latest
+  db:
+    hostname: primary
+    image: sogis/oereb-db-data:replace
     environment:
-      SERVER_PORT: 8282
+      PG_DATABASE: oereb
+      PG_LOCALE: de_CH.UTF-8
+      PG_PRIMARY_PORT: 5432
+      PG_MODE: primary
+      PG_USER: admin
+      PG_PASSWORD: admin
+      PG_PRIMARY_USER: repl
+      PG_PRIMARY_PASSWORD: repl
+      PG_ROOT_PASSWORD: secret
+      PG_WRITE_USER: gretl
+      PG_WRITE_PASSWORD: gretl
+      PG_READ_USER: ogc_server
+      PG_READ_PASSWORD: ogc_server
     ports:
-      - "8282:8282"
-    restart: always    
+      - "54321:5432"
+    restart: always
+  wms:
+    image: sogis/oereb-wms:latest
+    environment:
+      QGIS_SERVER_PARALLEL_RENDERING: "true"
+      QGIS_SERVER_MAX_THREADS: 2
+      QGIS_FCGI_MAX_PROCESSES: 2
+      QGIS_FCGI_MIN_PROCESSES: 2
+      QGIS_SERVER_LOG_LEVEL: 0
+    ports:
+      - 8083:80
+    depends_on:
+      - db
+  web-service:
+    hostname: web-service
+    #image: sogis/oereb-web-service:25
+    image: sogis/oereb-web-service:latest
+    environment:
+      TZ: Europe/Zurich
+      DBURL: jdbc:postgresql://db:5432/oereb
+      DBUSR: admin
+      DBPWD: admin
+      TMPDIR: /home/oereb-web-service
+      DBSCHEMA: live
+      #SERVER_SERVLET_CONTEXT_PATH: /ws
+      SERVER_PORT: 8181
+      #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
+    ports:
+      - "8181:8181"
+    depends_on:
+      - db
+    restart: always
+  # client:
+  #   #depends_on:
+  #   #  - web-service
+  #   image: sogis/oereb-client:latest
+  #   environment:
+  #     SERVER_PORT: 8282
+  #   ports:
+  #     - "8282:8282"
+  #   restart: always    
   proxy:
     image: abiosoft/caddy:latest
-    #container_name: caddy
     #environment:
     #  ACME_AGREE: "true"
     restart: always

@@ -2,7 +2,6 @@ http://localhost
 tls stefan.ziegler.de@gmail.com
 
 proxy /ws web-service:8181 {
-    #transparent    
     header_upstream +X-Forwarded-Prexix ws
     header_upstream Host {host}
     header_upstream X-Real-IP {remote}
@@ -11,8 +10,12 @@ proxy /ws web-service:8181 {
     without /ws
 }
 
+proxy /wms/oereb wms:80/wms/oereb {
+   transparent
+   without /wms/oereb
+}
+
 proxy /client/ client:8282 {
-    #transparent
     without /client
 }
 

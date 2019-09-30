@@ -12,7 +12,6 @@ Datenbank zur Speicherung der ÖREB-Daten und weiterer notwendiger Daten. Dazu g
 
 Um das Testen noch einfacher zu machen, wurde auf Basis des `oereb-db`-Images ein weiteres [Datenbankimage](https://cloud.docker.com/u/sogis/repository/docker/sogis/oereb-db-data) erstellt, das bereits sämtliche Daten im Image selber beinhaltet, d.h. es müssen keine Importe gemacht werden.
 
-
 ### QGIS-Server
 Dient als WMS-Server für die ÖREB-Daten. Bedient sich von Views (oder materialisierten Views) aus der ÖREB-Datenbank. Dockerfile und Konfigurationsdateien (QGS-, QML-Dateien) sind [hier](https://github.com/sogis/oereb-wms) zu finden.
 
