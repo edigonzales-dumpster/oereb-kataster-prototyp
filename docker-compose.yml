@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db-data:replace
+    image: sogis/oereb-db-data:full
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
@@ -34,7 +34,6 @@ services:
       - db
   web-service:
     hostname: web-service
-    #image: sogis/oereb-web-service:25
     image: sogis/oereb-web-service:latest
     environment:
       TZ: Europe/Zurich
