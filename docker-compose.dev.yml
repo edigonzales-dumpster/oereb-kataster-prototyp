@@ -7,19 +7,19 @@ services:
     volumes:
       - "./caddy/Caddyfile.dev:/etc/Caddyfile"
     restart: always
-  # client:
-  #   #depends_on:
-  #   #  - web-service
-  #   image: sogis/oereb-client:latest
-  #   environment:
-  #     SERVER_PORT: 8282
-  #     OEREB_WEB_SERVICE_URL_SERVER: http://web-service:8181/extract/
-  #     OEREB_WEB_SERVICE_URL_CLIENT: http://localhost/ws/extract/
-  #     SEARCH_SERVICE_URL: https://geo.so.ch/api/search/v2/?filter=ch.so.agi.av.grundstuecke.rechtskraeftig,ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge&limit=10&searchtext=
-  #     DATA_SERVICE_URL: https://geo.so.ch/api/data/v1/
-  #     BACKGROUND_WMTS_URL: https://geo.so.ch/api/wmts/1.0.0/{Layer}/default/2056/{TileMatrix}/{TileRow}/{TileCol}
-  #     BACKGROUND_WMTS_LAYER: ch.so.agi.hintergrundkarte_sw
-  #     WMS_HOST_MAPPING: "{'http://wms:80/wms/oereb':'http://localhost/wms/oereb'}"
-  #   ports:
-  #     - "8282:8282"
-  #   restart: always    
+  client:
+    #depends_on:
+    #  - web-service
+    image: sogis/oereb-client:latest
+    environment:
+      SERVER_PORT: 8282
+      OEREB_WEB_SERVICE_URL_SERVER: http://web-service:8181/
+      OEREB_WEB_SERVICE_URL_CLIENT: http://localhost/ws/
+      SEARCH_SERVICE_URL: https://geo.so.ch/api/search/v2/?filter=ch.so.agi.av.grundstuecke.rechtskraeftig,ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge&limit=10&searchtext=
+      DATA_SERVICE_URL: https://geo.so.ch/api/data/v1/
+      BACKGROUND_WMTS_URL: https://geo.so.ch/api/wmts/1.0.0/{Layer}/default/2056/{TileMatrix}/{TileRow}/{TileCol}
+      BACKGROUND_WMTS_LAYER: ch.so.agi.hintergrundkarte_sw
+      WMS_HOST_MAPPING: "{'http://wms:80/wms/oereb':'http://localhost/wms/oereb'}"
+    ports:
+      - "8282:8282"
+    restart: always    

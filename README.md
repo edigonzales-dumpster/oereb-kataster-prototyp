@@ -23,6 +23,7 @@ Während der Entwicklung des ÖREB-Katasters ist es zwingend notwendig die Param
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml stop
 ```
 
 ## Starten des Katasters
