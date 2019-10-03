@@ -42,6 +42,7 @@ services:
       DBPWD: admin
       TMPDIR: /home/oereb-web-service
       DBSCHEMA: live
+      MININTERSECTION: "0.1"
       #SERVER_SERVLET_CONTEXT_PATH: /ws
       SERVER_PORT: 8181
       #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
