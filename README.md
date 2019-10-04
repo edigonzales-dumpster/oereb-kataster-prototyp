@@ -15,8 +15,11 @@ Um das Testen noch einfacher zu machen, wurde auf Basis des `oereb-db`-Images ei
 ### QGIS-Server
 Dient als WMS-Server für die ÖREB-Daten. Bedient sich von Views (oder materialisierten Views) aus der ÖREB-Datenbank. Dockerfile und Konfigurationsdateien (QGS-, QML-Dateien) sind [hier](https://github.com/sogis/oereb-wms) zu finden.
 
+### ÖREB-Client
+Standalone ÖREB-Web-Client: [https://github.com/edigonzales/oereb-client-gwt](https://github.com/edigonzales/oereb-client-gwt). 
+
 ### Proxyserver (Caddy)
-Keine offizielle Komponente des ÖREB-Katasters des Kanton Solothurn.
+Proxyserver.
 
 ## Development
 Während der Entwicklung des ÖREB-Katasters ist es zwingend notwendig die Parameter verschiedener Komponenten überschreiben zu können (z.B. Domainname, URL von Services). Dies erfolgt mit einer separaten `docker-compose.dev.yml`-Datei. Der `docker-compose`-Befehl lautet wie folgt:
@@ -26,43 +29,29 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml stop
 ```
 
-## Starten des Katasters
-Starten der Anwendung(en) mit `docker-compose up`. Der ÖREB Web Service, QGIS Server (als WMS) und Caddy (als Proxy) werden ebenfalls gestartet. Falls das Datenbankimage noch nicht vorgänging herunterladen wurde, kann es aufgrund der Grösse des Images eine Weile dauern, bis das System Anfragen erfolgreich beantworten kann.
+## Testrequests FIXME
 
 Test-Requests:
-- http://localhost:8181/ws/capabilities/xml
-- http://localhost:8181/ws/versions/xml
+- http://localhost:8181/capabilities/xml
+- http://localhost:8181/versions/xml
 
-- http://localhost:8181/ws/getegrid/xml/?XY=2634186,1248332 
-- http://localhost:8181/ws/getegrid/xml/?XY=2600645,1215449 
-- http://localhost:8181/ws/extract/reduced/xml/geometry/CH368132060914
-- http://localhost:8181/ws/extract/reduced/xml/geometry/CH310601327458
-- http://localhost:8181/ws/extract/reduced/xml/geometry/CH789332067505
+- http://localhost:8181/getegrid/xml/?XY=2634186,1248332 
+- http://localhost:8181/getegrid/xml/?XY=2600645,1215449 
+- http://localhost:8181/extract/reduced/xml/geometry/CH368132060914
+- http://localhost:8181/extract/reduced/xml/geometry/CH310601327458
+- http://localhost:8181/extract/reduced/xml/geometry/CH789332067505
 
 * CH368132060914 (Wisen)  
 * CH310601327458 (Messen) 2600645 1215449
 * CH540632893416 (Wisen)
 
-- http://localhost:8181/ws/extract/reduced/xml/geometry/CH540632893416
+- http://localhost/ws/extract/reduced/xml/geometry/CH540632893416
 
-
-
-- http://localhost:8083/wms/oereb?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung
+- http://localhost:8083/wms/oereb?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.SO.NutzungsplanungGrundnutzung
 - http://localhost:8083/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities
 
-## Datenimport
 
-```
-./gradlew av_import:replaceCadastralSurveyingData plz_import:dbImport gb_kreise_import:dbImport bundescodeliste_import:dbImport bundesgesetze_import:dbImport bundesdaten_import:replaceFederalData kantonale_gesetze_import:dbImport annex_import:replaceAnnexData npl_import:replaceLandUsePlanningData npl_import:refreshMaterializedViews
-```
-
-Der "Fullimport" der amtlichen Vermessung dauert circa 2 bis 3 Stunden. Aus diesem Grund werden nur einige Gemeinden importiert (wo ÖREB-Daten vorhanden sind).
-
-## Deployment
-TODO
-
-
-## _User data_ für Digitalocean etc.
+## _User data_ für Digitalocean etc. FIXME
 ```
 #cloud-config
 users:
@@ -88,9 +77,3 @@ runcmd:
  #- curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
  #- docker stack deploy --compose-file=portainer-agent-stack.yml portainer 
 ```
-
-## TODO
-- Gretl-Jobs in eigenes Repo!
-- Env-Variablen für DB-Credentials
-- GRETL-Jobs auch in einem Dockercontainer ausführen.
-- Doku oereb-web-service: Beispiele für Spring-Konfiguration (Debug-Logging, context path...)
