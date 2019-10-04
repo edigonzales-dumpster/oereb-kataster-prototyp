@@ -1,7 +1,13 @@
 # ÖREB-Kataster-Prototyp
-Dieses Projekt zeigt das Zusammenspiel der im Rahmen der Einführung des ÖREB-Katasters im Kanton Solothurn entwickelten Komponenten. Es dient insbesondere dem Testen und dem Präsentieren des jeweiligen Realisierungsstandes der Komponenten und der Sicherstellung, dass das gesamte System reibungslos zusammenspielt. Es ist aber mehr als ein blosser Prototyp oder Showcase, sondern es ist (nach allenfalls notwendigen Anpassungen an den Konfigurationen) auch produktionstauglich. Bereits bei der Konzeption des ÖREB-Katasters im Kanton Solothurn wurde darauf geachtet, dass einfaches Deployment des Gesamtsystems (sowohl Code wie auch Daten) möglich ist. D.h. möglichst ohne Einwirkungen auf die restliche GDI. Eine Ausnahme bildet der ÖREB Web GIS Client, der als zusätzliches Werkzeug des bestehenden Web GIS Client entwickelt wurde und daher nicht ohne diesen in Betrieb genommen und getestet werden kann. Aus diesem Grund ist der ÖREB Web GIS Client nicht Bestandteil dieses Projektes. 
+Dieses Projekt zeigt das Zusammenspiel der im Rahmen der Einführung des ÖREB-Katasters im Kanton Solothurn entwickelten Komponenten. Es dient insbesondere dem Testen und dem Präsentieren des jeweiligen Realisierungsstandes der Komponenten und der Sicherstellung, dass das gesamte System reibungslos zusammenspielt.
 
-Um sowohl die einzelnen Komponenten wie auch die Prozesse und Schnittstellen möglichst einfach, schlank und transparent zu halten, wird konsequent mit INTERLIS und entsprechenden Schnittstellenwerkzeugen (ili2pg, ilivalidator, GRETL) gearbeitet. Das bedeutet z.B., dass die Daten in der Transferstruktur (des ÖREB-Rahmenmodells) ausgetauscht werden müssen und die Tabellen in der ÖREB-Datenbank mit ili2pg angelegt werden müssen ("opinionated").
+```
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+```
+
+```
+http://localhost/client/?egrid=CH955832730623
+```
 
 ## Komponenten
 ### ÖREB-Webservice
