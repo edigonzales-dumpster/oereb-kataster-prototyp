@@ -10,6 +10,11 @@ proxy /ws web-service:8181 {
     without /ws
 }
 
+proxy /wms/oereb-availability wms:80/wms/oereb-availability {
+   transparent
+   without /wms/oereb-availability
+}
+
 proxy /wms/oereb wms:80/wms/oereb {
    transparent
    without /wms/oereb
