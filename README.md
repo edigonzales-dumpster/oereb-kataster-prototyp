@@ -74,8 +74,8 @@ runcmd:
  - usermod -aG docker oerebuser 
  - mkdir --mode=0777 -p /private/oereb_db_prod
  #- chown -R oerebuser:oerebuser /private/oereb_db_prod
- - mkdir -p /private/caddy_prod
- - curl -L https://raw.githubusercontent.com/edigonzales/oereb-kataster-prototyp/master/caddy/Caddyfile -o /private/caddy_prod/Caddyfile
+ #- mkdir -p /private/caddy_prod
+ #- curl -L https://raw.githubusercontent.com/edigonzales/oereb-kataster-prototyp/master/caddy/Caddyfile -o /private/caddy_prod/Caddyfile
  - git clone https://github.com/edigonzales/oereb-kataster-prototyp.git /home/oerebuser/oereb-kataster-prototyp
  - chown -R oerebuser:oerebuser /home/oerebuser/oereb-kataster-prototyp
  #- docker swarm init --advertise-addr $(hostname -I | awk '{print $1}')
