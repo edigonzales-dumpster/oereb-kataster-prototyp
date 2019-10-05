@@ -1,4 +1,4 @@
-http://oereb.catais.org
+http://oereb.sogeo.services
 tls stefan.ziegler.de@gmail.com
 
 proxy /ws web-service:8181 {
