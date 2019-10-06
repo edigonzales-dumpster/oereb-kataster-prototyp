@@ -72,7 +72,7 @@ runcmd:
  - add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
  - apt-get install --yes adoptopenjdk-8-hotspot
  - usermod -aG docker oerebuser 
- - mkdir --mode=0777 -p /private/oereb_db_prod
+ #- mkdir --mode=0777 -p /private/oereb_db_prod
  #- chown -R oerebuser:oerebuser /private/oereb_db_prod
  #- mkdir -p /private/caddy_prod
  #- curl -L https://raw.githubusercontent.com/edigonzales/oereb-kataster-prototyp/master/caddy/Caddyfile -o /private/caddy_prod/Caddyfile
