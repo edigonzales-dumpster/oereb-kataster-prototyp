@@ -8,8 +8,8 @@ services:
       - "./caddy/Caddyfile.dev:/etc/Caddyfile"
     restart: always
   client:
-    #depends_on:
-    #  - web-service
+    depends_on:
+      - web-service
     image: sogis/oereb-client:latest
     environment:
       SERVER_PORT: 8282
