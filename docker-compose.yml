@@ -21,7 +21,8 @@ services:
       - "54321:5432"
     restart: always
   wms:
-    image: sogis/oereb-wms:latest
+    #image: sogis/oereb-wms:latest
+    image: sogis/oereb-wms:c39fa21
     environment:
       QGIS_SERVER_PARALLEL_RENDERING: "true"
       QGIS_SERVER_MAX_THREADS: 2
