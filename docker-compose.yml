@@ -61,6 +61,7 @@ services:
       OEREB_WEB_SERVICE_URL_SERVER: http://web-service:8181/
       OEREB_WEB_SERVICE_URL_CLIENT: http://oereb.sogeo.services/ws/
       SEARCH_SERVICE_URL: https://geo.so.ch/api/search/v2/?filter=ch.so.agi.av.grundstuecke.rechtskraeftig,ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge&limit=10&searchtext=
+      SEARCH_SERVICE_PATH: search/
       DATA_SERVICE_URL: https://geo.so.ch/api/data/v1/
       BACKGROUND_WMTS_URL: https://geo.so.ch/api/wmts/1.0.0/{Layer}/default/2056/{TileMatrix}/{TileRow}/{TileCol}
       BACKGROUND_WMTS_LAYER: ch.so.agi.hintergrundkarte_sw
