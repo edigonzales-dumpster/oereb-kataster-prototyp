@@ -26,3 +26,18 @@ services:
     ports:
       - "8282:8282"
     restart: always    
+  egrid-service:
+    hostname: egrid-service
+    image: sogis/egrid-service:latest
+    environment:
+      TZ: Europe/Zurich
+      DBURL: jdbc:postgresql://db:5432/oereb
+      DBUSR: admin
+      DBPWD: admin
+      DBSCHEMA: live
+      SERVER_PORT: 8383
+    ports:
+      - "8383:8383"
+    depends_on:
+      - db
+    restart: always

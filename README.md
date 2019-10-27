@@ -24,6 +24,9 @@ Dient als WMS-Server für die ÖREB-Daten. Bedient sich von Views (oder material
 ### ÖREB-Client
 Standalone ÖREB-Web-Client: [https://github.com/edigonzales/oereb-client-gwt](https://github.com/edigonzales/oereb-client-gwt). 
 
+### EGRID-Service
+TODO
+
 ### Proxyserver (Caddy)
 Proxyserver.
 
@@ -56,6 +59,7 @@ Test-Requests:
 - http://localhost:8083/wms/oereb?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.SO.NutzungsplanungGrundnutzung
 - http://localhost:8083/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities
 
+- http://localhost/egrid/getegrid?XY=2600456,1215400
 
 ## _User data_ für Digitalocean etc. FIXME
 ```
