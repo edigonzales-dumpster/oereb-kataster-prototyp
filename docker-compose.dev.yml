@@ -9,11 +9,12 @@ services:
     restart: always
   client:
     depends_on:
-      - web-service
+      - oereb-web-service
+      - cadastral-web-service
     image: sogis/oereb-client:latest
     environment:
       SERVER_PORT: 8282
-      OEREB_WEB_SERVICE_URL_SERVER: http://web-service:8181/
+      OEREB_WEB_SERVICE_URL_SERVER: http://oereb-web-service:8181/
       OEREB_WEB_SERVICE_URL_CLIENT: http://localhost/ws/
       SEARCH_SERVICE_URL: https://geo.so.ch/api/search/v2/?filter=ch.so.agi.av.grundstuecke.rechtskraeftig,ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge&limit=10&searchtext=
       SEARCH_SERVICE_PATH: search/
@@ -23,21 +24,22 @@ services:
       AVAILABILITY_WMS_URL: http://localhost/wms/oereb-availability
       AVAILABILITY_WMS_LAYERS: ch.SO.municipality_with_plr
       WMS_HOST_MAPPING: "{'http://wms:80/wms/oereb':'http://localhost/wms/oereb'}"
+      CADASTRAL_SURVEYING_SERVICE_URL: http://cadastral-web-service:8484/extract/
     ports:
       - "8282:8282"
     restart: always    
-  parcel-info-service:
-    hostname: parcel-info-service
-    image: sogis/parcel-info-service:latest
-    environment:
-      TZ: Europe/Zurich
-      DBURL: jdbc:postgresql://db:5432/oereb
-      DBUSR: admin
-      DBPWD: admin
-      DBSCHEMA: live
-      SERVER_PORT: 8383
-    ports:
-      - "8383:8383"
-    depends_on:
-      - db
-    restart: always
+  # parcel-info-service:
+  #   hostname: parcel-info-service
+  #   image: sogis/parcel-info-service:latest
+  #   environment:
+  #     TZ: Europe/Zurich
+  #     DBURL: jdbc:postgresql://db:5432/oereb
+  #     DBUSR: admin
+  #     DBPWD: admin
+  #     DBSCHEMA: live
+  #     SERVER_PORT: 8383
+  #   ports:
+  #     - "8383:8383"
+  #   depends_on:
+  #     - db
+  #   restart: always

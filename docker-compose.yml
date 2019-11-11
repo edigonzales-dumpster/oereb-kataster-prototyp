@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     hostname: primary
-    image: sogis/oereb-db-data:full
+    image: sogis/oereb-db-data:2019-10-25_205953
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
@@ -22,7 +22,8 @@ services:
     restart: always
   wms:
     #image: sogis/oereb-wms:latest
-    image: sogis/oereb-wms:c39fa21
+    #image: sogis/oereb-wms:c39fa21
+    image: sogis/oereb-wms:5fad780
     environment:
       QGIS_SERVER_PARALLEL_RENDERING: "true"
       QGIS_SERVER_MAX_THREADS: 2
@@ -33,8 +34,8 @@ services:
       - 8083:80
     depends_on:
       - db
-  web-service:
-    hostname: web-service
+  oereb-web-service:
+    hostname: oereb-web-service
     image: sogis/oereb-web-service:latest
     environment:
       TZ: Europe/Zurich
@@ -53,13 +54,29 @@ services:
     depends_on:
       - db
     restart: always
+  cadastral-web-service:
+    hostname: cadastral-web-service
+    image: sogis/cadastral-web-service:latest
+    environment:
+      TZ: Europe/Zurich
+      SPRING_PROFILES_ACTIVE: dev
+      DBUSR: admin
+      DBPWD: admin
+      DBURL: jdbc:postgresql://db:5432/oereb
+      SERVER_PORT: 8484
+    ports:
+      - "8484:8484"
+    depends_on:
+      - db
+    restart: always
   client:
     depends_on:
-      - web-service
+      - oereb-web-service
+      - cadastral-web-service
     image: sogis/oereb-client:latest
     environment:
       SERVER_PORT: 8282
-      OEREB_WEB_SERVICE_URL_SERVER: http://web-service:8181/
+      OEREB_WEB_SERVICE_URL_SERVER: http://oereb-web-service:8181/
       OEREB_WEB_SERVICE_URL_CLIENT: http://oereb.sogeo.services/ws/
       SEARCH_SERVICE_URL: https://geo.so.ch/api/search/v2/?filter=ch.so.agi.av.grundstuecke.rechtskraeftig,ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge&limit=10&searchtext=
       SEARCH_SERVICE_PATH: search/
@@ -67,6 +84,7 @@ services:
       BACKGROUND_WMTS_URL: https://geo.so.ch/api/wmts/1.0.0/{Layer}/default/2056/{TileMatrix}/{TileRow}/{TileCol}
       BACKGROUND_WMTS_LAYER: ch.so.agi.hintergrundkarte_sw
       WMS_HOST_MAPPING: "{'http://wms:80/wms/oereb':'http://oereb.sogeo.services/wms/oereb'}"
+      CADASTRAL_SURVEYING_SERVICE_URL: http://cadastral-web-service:8484/extract/
     ports:
       - "8282:8282"
     restart: always    
