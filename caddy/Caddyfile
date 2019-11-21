@@ -15,6 +15,10 @@ proxy /wms/oereb wms:80/wms/oereb {
    without /wms/oereb
 }
 
+proxy /parcel parcel-info-service:8585 {
+    without /parcel
+}
+
 proxy / client:8282 {
 }
 

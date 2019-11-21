@@ -18,7 +18,7 @@ services:
       PG_READ_USER: ogc_server
       PG_READ_PASSWORD: ogc_server
     ports:
-      - "54321:5432"
+      - "54322:5432"
     restart: always
   wms:
     #image: sogis/oereb-wms:latest
@@ -85,9 +85,25 @@ services:
       BACKGROUND_WMTS_LAYER: ch.so.agi.hintergrundkarte_sw
       WMS_HOST_MAPPING: "{'http://wms:80/wms/oereb':'http://oereb.sogeo.services/wms/oereb'}"
       CADASTRAL_SURVEYING_SERVICE_URL: http://cadastral-web-service:8484/extract/
+      CADASTRAL_SURVEYING_PARCEL_URL: http://oereb.sogeo.services/parcel/getparcel
     ports:
       - "8282:8282"
-    restart: always    
+    restart: always  
+  parcel-info-service:
+    hostname: parcel-info-service
+    image: sogis/parcel-info-service:latest
+    environment:
+      TZ: Europe/Zurich
+      DBURL: jdbc:postgresql://db:5432/oereb
+      DBUSR: admin
+      DBPWD: admin
+      DBSCHEMA: live
+      SERVER_PORT: 8585
+    ports:
+      - "8585:8585"
+    depends_on:
+      - db
+    restart: always      
   proxy:
     image: abiosoft/caddy:latest
     #environment:
