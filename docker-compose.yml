@@ -85,25 +85,37 @@ services:
       BACKGROUND_WMTS_LAYER: ch.so.agi.hintergrundkarte_sw
       WMS_HOST_MAPPING: "{'http://wms:80/wms/oereb':'http://oereb.sogeo.services/wms/oereb'}"
       CADASTRAL_SURVEYING_SERVICE_URL: http://cadastral-web-service:8484/extract/
-      CADASTRAL_SURVEYING_PARCEL_URL: http://oereb.sogeo.services/parcel/getparcel
+      #CADASTRAL_SURVEYING_PARCEL_URL: http://oereb.sogeo.services/parcel/getparcel
+      CADASTRAL_SURVEYING_PARCEL_URL: http://oereb.sogeo.services/realty/getrealty
     ports:
       - "8282:8282"
     restart: always  
-  parcel-info-service:
-    hostname: parcel-info-service
-    image: sogis/parcel-info-service:latest
+  # parcel-info-service:
+  #   hostname: parcel-info-service
+  #   image: sogis/parcel-info-service:latest
+  #   environment:
+  #     TZ: Europe/Zurich
+  #     DBURL: jdbc:postgresql://db:5432/oereb
+  #     DBUSR: admin
+  #     DBPWD: admin
+  #     DBSCHEMA: live
+  #     SERVER_PORT: 8585
+  #   ports:
+  #     - "8585:8585"
+  #   depends_on:
+  #     - db
+  #   restart: always    
+  realty-utility-service:
+    hostname: realty-utility-service
+    image: sogis/realty-utility-service:latest
     environment:
       TZ: Europe/Zurich
-      DBURL: jdbc:postgresql://db:5432/oereb
-      DBUSR: admin
-      DBPWD: admin
-      DBSCHEMA: live
-      SERVER_PORT: 8585
+      QUARKUS_DATASOURCE_URL: jdbc:postgresql://db:5432/oereb
     ports:
-      - "8585:8585"
+      - "8686:8080"
     depends_on:
       - db
-    restart: always      
+    restart: always
   proxy:
     image: abiosoft/caddy:latest
     #environment:

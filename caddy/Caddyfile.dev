@@ -10,8 +10,8 @@ proxy /ws oereb-web-service:8181 {
     without /ws
 }
 
-proxy /parcel parcel-info-service:8585 {
-    without /parcel
+proxy /realty realty-utility-service:8080 {
+    without /realty
 }
 
 proxy /wms/oereb wms:80/wms/oereb {
