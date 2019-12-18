@@ -46,11 +46,11 @@ services:
       DBSCHEMA: live
       MININTERSECTION: "0.1"
       #SERVER_SERVLET_CONTEXT_PATH: /ws
-      SERVER_PORT: 8181
+      SERVER_PORT: 8080
       #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
       #LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_JDBC_CORE: TRACE
     ports:
-      - "8181:8181"
+      - "8181:8080"
     depends_on:
       - db
     restart: always
@@ -75,8 +75,8 @@ services:
       - cadastral-web-service
     image: sogis/oereb-client:latest
     environment:
-      SERVER_PORT: 8282
-      OEREB_WEB_SERVICE_URL_SERVER: http://oereb-web-service:8181/
+      SERVER_PORT: 8080
+      OEREB_WEB_SERVICE_URL_SERVER: http://oereb-web-service:8080/
       OEREB_WEB_SERVICE_URL_CLIENT: http://oereb.sogeo.services/ws/
       SEARCH_SERVICE_URL: https://geo.so.ch/api/search/v2/?filter=ch.so.agi.av.grundstuecke.rechtskraeftig,ch.so.agi.av.gebaeudeadressen.gebaeudeeingaenge&limit=10&searchtext=
       SEARCH_SERVICE_PATH: search/
@@ -88,23 +88,8 @@ services:
       #CADASTRAL_SURVEYING_PARCEL_URL: http://oereb.sogeo.services/parcel/getparcel
       CADASTRAL_SURVEYING_PARCEL_URL: http://oereb.sogeo.services/realty/getrealty
     ports:
-      - "8282:8282"
+      - "8282:8080"
     restart: always  
-  # parcel-info-service:
-  #   hostname: parcel-info-service
-  #   image: sogis/parcel-info-service:latest
-  #   environment:
-  #     TZ: Europe/Zurich
-  #     DBURL: jdbc:postgresql://db:5432/oereb
-  #     DBUSR: admin
-  #     DBPWD: admin
-  #     DBSCHEMA: live
-  #     SERVER_PORT: 8585
-  #   ports:
-  #     - "8585:8585"
-  #   depends_on:
-  #     - db
-  #   restart: always    
   realty-utility-service:
     hostname: realty-utility-service
     image: sogis/realty-utility-service:latest
@@ -117,15 +102,10 @@ services:
       - db
     restart: always
   proxy:
-    image: abiosoft/caddy:latest
+    image: sogis/oereb-proxy:latest
     #environment:
     #  ACME_AGREE: "true"
     restart: always
     ports:
       - "80:80"
       #- "443:443"
-    volumes:
-      #- "/private/caddy_prod/.caddy:/root/.caddy"
-      #- "./caddy/Caddyfile:/etc/Caddyfile"
-      #- "/private/caddy_prod/Caddyfile:/etc/Caddyfile"
-      - "./caddy/Caddyfile:/etc/Caddyfile"
